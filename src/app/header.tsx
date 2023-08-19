@@ -7,10 +7,18 @@ export const menuItems = [
       title: 'Home',
       url: '/dashboard',
     },
-    {
+    /*{
       title: 'Blog',
       url: '/blog',
+    },*/
+    {
+      title: 'Projects',
+      url: '/projects',
     },
+    /*{
+      title: 'Music',
+      url: '/music',
+    },*/
     {
       title: 'Contact',
       url: '/contact',
@@ -19,17 +27,23 @@ export const menuItems = [
 
 export default function Header() {
     return (
+      <div className="shadow-lg">
         <nav>
-          <ul className="menus flex w-screen justify-center space-x-8">
+          <ul className="menus flex flex-wrap w-screen justify-center gap-x-10 md:gap-x-24">
             {menuItems.map((menu, index) => {
               return (
-                <li className="menu-items h-12 w-24 flex justify-center items-center" key={index}>
-                  <a href={menu.url}>{menu.title}</a>
+                <li className="group menu-items w-18 my-6 text-center place-content-center content-center transition ease-out hover:scale-110" key={index}>
+                  {/* https://stackoverflow.com/questions/70906977/tailwind-underline-hover-animation */}
+                  <a href={menu.url}>
+                    {menu.title}
+                    <span className="block max-w-0 group-hover:max-w-full transition-all duration-200 h-0.5 bg-black"></span>
+                  </a>
                 </li>
               );
             })}
           </ul>
         </nav>
+        </div>
       );
 
 }

@@ -1,64 +1,66 @@
+
 'use client'
 
-import { NameToProject, Project } from "@/constants/projects"
+
+import { NameToProject } from "@/constants/projectData"
+import { Project } from "@/constants/Project";
 import Image from "next/image";
-import Carousel from 'react-bootstrap/Carousel';
+
 
 
 export default function Page({ params }: { params: { project: string } }) {
 
     const info: Project = NameToProject[params.project];
 
-    console.log("hello");
-    console.log(NameToProject)
-    console.log(info);
-
     if (!info) {
         return <div>error</div>
     }
 
     return (
-    <div>
-        <div className="flex justify-center">
-            <div className="">
-                <h1 className="text-9xl">
+
+    <section className="m-20 p-10 rounded-md shadow-lg h-full ">
+        <div className="flex flex-wrap justify-evenly h-full">
+            
+            <div className="flex items-center justify-center">
+                <h1 className="text-4xl md:text-8xl mb-10 text-center">
                     {info.name}
                 </h1>
-                <div>
-                    {info.tools?.map((tool,i) => (
-                        <div key={i}>
-                            <h2 className="text-4xl">
-                            {tool}
-                            </h2>
-                            
-
-                        </div>
-                        
-                    ))}
-                </div>
-                
             </div>
+                
+            
+            <div className="">
+                    {/* TODO: make this a crossfade or carousel of many images instead of one */}
+                    {/* {info.images?.map((img,i) => (
+                        <Image key={i} src={img} alt={"image"}/>
+                    ))} */}
+
+                    {info.images && <Image src={info.images[0]} alt="image of project"/>}
 
 
-            <Carousel fade interval={2000} controls={false}> 
-                    {info.images?.map(img => (
-                    <Carousel.Item key={img.src}>
-                        <Image src={img} alt={"image"}></Image>
-                        
-                    </Carousel.Item>
 
-                    ))}
-
-            </Carousel>
+            </div>
+        </div>
+        <div className="flex content-center justify-center align-middle mt-5">
+            
+            {info.tools && <h2 className="flex text-lg md:text-2xl text-center whitespace-pre-wrap ">
+                <b>Tools Used: </b> {info.tools}
+            </h2>}
+        </div>
+        <div className="flex content-center justify-center align-middle mt-2">
+            {info.link && <h2 className="flex text-lg md:text-2xl text-center whitespace-pre-wrap ">
+                <a className="underline text-blue-400" href={info.link}>Link to {info.name}</a>
+            </h2>}
+            
         </div>
         
-        
+        <div className="justify-center">
+            <p className="mt-4 md:mx-12 text-center md:text-xl">
+                {info.description}
+            </p>
+        </div>
+    </section>
 
-        <p>
-            {info.description}
-        </p>
 
 
-
-    </div>)
+    )
 }
