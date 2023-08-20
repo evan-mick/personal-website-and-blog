@@ -3,9 +3,9 @@ import { StaticImageData, StaticImport } from "next/dist/shared/lib/get-img-prop
 export interface Project {
     name: string,
     description: string,
-    tools?: string[],
-    images?: StaticImageData[],
     link?: string,
+    tools?: string,
+    images?: StaticImageData[],
 }
 
 export interface ProjectLinkHolder {

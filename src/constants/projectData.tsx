@@ -1,12 +1,5 @@
 import photo from "public/header.jpg";
-import { ProjectLinkHolder } from "./types";
-import { Project } from "./Project";
-
-
-
-
-
-
+import { ProjectLinkHolder, Project } from "./types";
 
 /*
 

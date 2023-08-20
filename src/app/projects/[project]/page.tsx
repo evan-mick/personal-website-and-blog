@@ -3,7 +3,7 @@
 
 
 import { NameToProject } from "@/constants/projectData"
-import { Project } from "@/constants/Project";
+import { Project } from "@/constants/types";
 import Image from "next/image";
 
 
