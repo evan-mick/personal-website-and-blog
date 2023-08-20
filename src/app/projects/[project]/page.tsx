@@ -1,11 +1,6 @@
-
-'use client'
-
-
 import { NameToProject } from "@/constants/projectData"
 import { Project } from "@/constants/types";
 import Image from "next/image";
-
 
 
 export default function Page({ params }: { params: { project: string } }) {
