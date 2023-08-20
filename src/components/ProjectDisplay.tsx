@@ -23,13 +23,13 @@ export default function ProjectDisplay(props: ProjectLinkHolder) {
     }
 
     return (
-        <div className="h-64 w-96 shadow-lg rounded-lg transition ease-out hover:scale-105">
-            <button onClick={() => onAnyClick()}>
-                <Image className="w-96 h-48 overflow-hidden object-contain hover:object-scale-down"
+        <div className="h-76 w-96 shadow-lg rounded-lg transition ease-out hover:scale-105">
+            <button onClick={() => onAnyClick()} className="flex-col justify-center align-middle items-center ">
+                <Image className="w-96 md:h-48 object-scale-down md:object-cover"
                     src={props.photoLink}
                     alt="Photo"
                 />
-                <p className="m-4">
+                <p className="m-4 text-center hidden md:flex">
                     {props.desc}
                 </p>
             </button>

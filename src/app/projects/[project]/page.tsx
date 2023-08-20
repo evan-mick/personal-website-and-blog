@@ -18,7 +18,7 @@ export default function Page({ params }: { params: { project: string } }) {
 
     return (
 
-    <section className="m-20 p-10 rounded-md shadow-lg h-full ">
+    <section className="m-20 p-10 rounded-md shadow-lg h-full">
         <div className="flex flex-wrap justify-evenly h-full">
             
             <div className="flex items-center justify-center">
@@ -28,13 +28,13 @@ export default function Page({ params }: { params: { project: string } }) {
             </div>
                 
             
-            <div className="">
+            <div className="object-scale-down max-w-4xl">
                     {/* TODO: make this a crossfade or carousel of many images instead of one */}
                     {/* {info.images?.map((img,i) => (
                         <Image key={i} src={img} alt={"image"}/>
                     ))} */}
 
-                    {info.images && <Image src={info.images[0]} alt="image of project"/>}
+                    {info.images && <Image  src={info.images[0]} alt="image of project"/>}
 
 
 

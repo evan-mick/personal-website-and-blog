@@ -15,7 +15,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className="max-width-full overflow-y-scroll overflow-x-hidden">
+    <html lang="en" className="max-width-full overflow-y-scroll overflow-x-hidden font-mono">
       <head>
       {/* import "../../node_modules/bootstrap/dist/css/bootstrap.css" */}
       </head>
