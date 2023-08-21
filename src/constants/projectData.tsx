@@ -32,7 +32,7 @@ import bennyMain from "public/games/Benny/main.png"
 import bennyScreenshot from "public/games/Benny/screenshot1.png"
 
 export const BennyProj : Project = {
-    name: "Skippy",
+    name: "Benny",
     description: "",
     tools : "Unity, C#, Git, and Logic Pro",
     images : [

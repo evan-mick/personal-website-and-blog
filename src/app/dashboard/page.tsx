@@ -67,7 +67,7 @@ export default function Page() {
             <li className="mt-2"><b>Java: </b>Using Java I have created a Wolfenstein-like rendering engine. I also TA's 2D game engines where I helped program, design, and debug other students game engines. 
             In addition, I used Java to create the backend for a course planning website for my software engineering course. </li>
             <li className="mt-2"><b>React, Typescript, CSS:</b> Along with using Next for this website, I am currently using React Native for a social media mobile app. 
-            I have also made use of React for school projects in my school's software engineering course and the frontend for a WIP project for Brown's Entrepreneurship Club.</li>
+            I have also made use of React for school projects in my school's software engineering course and for the frontend for a WIP project for Brown's Entrepreneurship Club.</li>
             <li className="mt-2"><b>C (and a subset of C++)</b>: For my computer systems course, I created Snake with custom levels, 
             security and page table features for WeenseyOS (a unix-like OS project), 
             and the logic for a key value store all using C (and/or minimal features of C++, like classes and some data structures from the standard library) </li>
@@ -75,7 +75,7 @@ export default function Page() {
             In the summer of 2022, I taught the engine to 30 teenagers at my time camp counselling at iDTech. 
             I have also used the engine to help create US(FPS), a packaged themed first person shooter, in Brown RISD Game Developers. 
             Lastly, I made a prototype map for the VR game Pavlov, as well as a VR fireplace simulator for the Brown 2023 hackathon.</li>
-            <li className="mt-2"><b>Python</b>: For my data structures and algorithms class, I implemented the page table algorithm using Python.</li>
+            <li className="mt-2"><b>Python</b>: For my data structures and algorithms class, I implemented the page rank algorithm using Python.</li>
           </ul>
         </div>
       </section>
