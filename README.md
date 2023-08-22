@@ -1,15 +1,16 @@
+Hi! Welcome to the code for my website. It uses Next.js and Tailwind. Also, eventually I am going to add a blog and music page once I have some content for that. 
+A lot of this readme is the default Next.js stuff, keeping in here in case any n00bs wanna learn haha. 
+
+The content for the project pages can be found in "projectData.tsx" in the constants folder. There are some resusable components for displaying projects, and lastly the general project structure follows Next.js's new app conventions. 
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
 
-First, run the development server:
-
+First, run the development server, we use yarn
 ```bash
-npm run dev
 # or
 yarn dev
-# or
-pnpm dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
@@ -26,9 +27,3 @@ To learn more about Next.js, take a look at the following resources:
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.

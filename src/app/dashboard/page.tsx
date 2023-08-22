@@ -36,7 +36,7 @@ export default function Page() {
           </p>
           <br/>
           <p>
-            The website you are seeing was coded from scratch by me using Next JS with Tailwind CSS. 
+            The website you are seeing was coded from scratch by me using Next JS with Tailwind CSS. You can find the code for it <a className="underline text-blue-400" href="https://github.com/evan-mick/personal-website-and-blog">Here</a> 
           </p>
         </div>
       </section>
