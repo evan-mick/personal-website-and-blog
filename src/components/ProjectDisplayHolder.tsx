@@ -5,7 +5,7 @@ import ProjectDisplay from "./ProjectDisplay";
 
 export default function ProjectDisplayHolder(props: { data: ProjectLinkHolder[] }) {
     return (
-        <div className="flex flex-wrap gap-4 md:gap-16 p-12 justify-center">
+        <div className="flex flex-wrap gap-4 md:gap-16 justify-center">
             {props.data.map((link,i) =>
                 <ProjectDisplay key={i} linkTo={link.linkTo} photoLink={link.photoLink} desc={link.desc}/>
             )}

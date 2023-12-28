@@ -3,8 +3,8 @@ import { FinishedProjectsLinks } from "@/constants/projectData";
 
 export default function Page() {
     return (
-      <section className="m-20 p-10 rounded-md shadow-lg h-full">
-        <h4 className="text-5xl text-center md:text-left">Projects</h4>
+      <section className="sm:m-20 p-10 rounded-md shadow-lg h-full">
+        <h4 className="text-5xl text-center md:text-left pb-12">Projects</h4>
         {/* <p className="my-5">
           At the top here you can see my finished works. Scroll down a bit more and you'll see some of my unfinished projects. 
         </p>
