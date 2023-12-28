@@ -8,9 +8,12 @@ export interface Project {
     images?: StaticImageData[],
 }
 
-export interface BlogPostData {
+export interface BlogPostMetaData {
     name: string,
     description: string,
+    date: string,
+    img: StaticImport,
+    url: string, 
 }
 
 export interface ProjectLinkHolder {
@@ -18,3 +21,4 @@ export interface ProjectLinkHolder {
     photoLink: StaticImport, 
     desc: string,
 }
+

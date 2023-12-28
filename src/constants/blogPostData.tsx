@@ -1,10 +1,13 @@
-import { BlogPostData, ProjectLinkHolder } from "./types";
+import { BlogPostMetaData, ProjectLinkHolder } from "./types";
 import blogtest from "public/games/Skippy/screenshot1.png"
 
 
-export var testData: BlogPostData = {
+export var testData: BlogPostMetaData = {
     name: "Test Data",
     description: "this is a test data thanga lasjfklasdjflasdkf",
+    date: "",
+    img: blogtest,
+    url: ""
 }
 export const TestProjLink : ProjectLinkHolder = {
     linkTo: "/blog/test", 
@@ -13,7 +16,7 @@ export const TestProjLink : ProjectLinkHolder = {
 }
 
 
-export const NameToBlogData : { [key: string]: BlogPostData }  = {
+export const NameToBlogData : { [key: string]: BlogPostMetaData }  = {
     testData: testData,
 }
 
