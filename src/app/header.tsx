@@ -23,6 +23,10 @@ export const menuItems = [
       title: 'Contact',
       url: '/contact',
     },
+    // {
+    //   title: 'Blog',
+    //   url: '/blog',
+    // },
   ];
 
 export default function Header() {

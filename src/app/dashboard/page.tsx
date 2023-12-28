@@ -19,13 +19,14 @@ export default function Page() {
         <div className="whitespace-pre-wrap m-10 md:mx-48 xl:mx-96">
           <p>
             I am a Computer Science and Economics student at Brown University well versed in software engineering and product management. 
-            I am also a passionate game developer and musician. 
+            I am also a passionate game developer and musician. This website exists as a place for employeers to see my experiences 
+            and for me to show off my software, music, and thoughts in a centralized place.
             
           </p>
           <br/>
           <p>
-            Since June, I have been employeed at 2K Games as a "Software Engineering, Product Management Intern" (a bit of a mouthful, I know haha). 
-            There, I have helped analyze the onboarding experience and costs of their backend services used accross 2K's titles 
+            As a participant in Capitalism, I seek employment. From June to November 2023, I was employeed at 2K Games as a "Software Engineering, Product Management Intern" (a bit of a mouthful, I know haha). 
+            There, I helped analyze the onboarding experience and costs of their backend services used accross 2K's titles 
             by incorporating their services in my own Unreal projects, talking to customers, and undergoing market research. 
           </p>
           <br/>
@@ -60,18 +61,25 @@ export default function Page() {
             Here are some languages and tools I am familiar with, and where I made use of them. 
           </p>
           <ul>
-            <li className="mt-2"><b>Unity Game Engine and C#:</b> I have used Unity for over 6 years. 
-            In that time, I have released 6 projects online and created over a dozen other prototypes and small projects. 
-            From that, I have gained a deep understanding of the game engine, C#, and object oriented programming practices. 
-            See the projects section for information about the released projects </li>
+            
             <li className="mt-2"><b>Java: </b>Using Java I have created a Wolfenstein-like rendering engine. I also TA's 2D game engines where I helped program, design, and debug other students game engines. 
             In addition, I used Java to create the backend for a course planning website for my software engineering course. </li>
             <li className="mt-2"><b>React, Typescript, CSS:</b> Along with using Next for this website, I am currently using React Native for a social media mobile app. 
             I have also made use of React for school projects in my school's software engineering course and for the frontend for a WIP project for Brown's Entrepreneurship Club.</li>
-            <li className="mt-2"><b>C (and a subset of C++)</b>: For my computer systems course, I created Snake with custom levels, 
+            <li className="mt-2"><b>C++</b>: In Computer Graphics, I made a realtime renderer (using OpenGL), a software raytracer, and paint application using C++.
+            In Computer Networks, I created an implementation of the IP and TCP protocol with virtual router and host nodes. 
+            In a joint final project between the two classes, I created a multiplayer Quake clone that utilized a custom built ECS and a game client-server architecture. It uses OpenGL for rendering. 
+            For it, I with 2 other people created physics, rendering, gameplay, and networking sytems.  
+            Lastly, for my computer systems course, I created Snake with custom levels, 
             security and page table features for WeenseyOS (a unix-like OS project), 
-            and the logic for a key value store all using C (and/or minimal features of C++, like classes and some data structures from the standard library) </li>
-            <li className="mt-2"><b>Unreal Game Engine, Blueprints, C++</b>: During my time at 2K games, I used Unreal Game Engine to explore the onboarding process for their internal games backend services. 
+            and the logic for a key value store all using C++</li>
+            <li className="mt-2"><b>Unity Game Engine and C#:</b> I have used Unity for over 6 years. 
+            In that time, I have released 6 projects online and created over a dozen other prototypes and small projects. 
+            From that, I have gained a deep understanding of the game engine, C#, and object oriented programming practices. 
+            See the projects section for information about the released projects </li>
+            <li className="mt-2"><b>Godot:</b>Along with many small prototypes, I was the lead programmer for Origami Bird Battle with in the Brown-RISD Game Developers. 
+            I helped program, design, and architect the game and its systems while helping 10 other programmers with varying skill levels learn and use Godot effectively.</li>
+            <li className="mt-2"><b>Unreal Game Engine</b>: During my time at 2K games, I used Unreal Game Engine to explore the onboarding process for their internal games backend services. 
             In the summer of 2022, I taught the engine to 30 teenagers at my time camp counselling at iDTech. 
             I have also used the engine to help create US(FPS), a packaged themed first person shooter, in Brown RISD Game Developers. 
             Lastly, I made a prototype map for the VR game Pavlov, as well as a VR fireplace simulator for the Brown 2023 hackathon.</li>

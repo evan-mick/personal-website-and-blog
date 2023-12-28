@@ -8,6 +8,11 @@ export interface Project {
     images?: StaticImageData[],
 }
 
+export interface BlogPostData {
+    name: string,
+    description: string,
+}
+
 export interface ProjectLinkHolder {
     linkTo: string, 
     photoLink: StaticImport, 
