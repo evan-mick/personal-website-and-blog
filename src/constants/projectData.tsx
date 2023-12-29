@@ -48,6 +48,34 @@ export const BennyProjLink : ProjectLinkHolder = {
     desc: "Benny is a murder mystery game where you uncover your husband's murderer",
 }
 
+// Origami Bird Battle
+import birdbattleScreenshot from "public/games/BirdBattle/birdbattlescreenshot.png"
+import birdbattleMain from "public/games/BirdBattle/birdbattlefront.png"
+
+export const BirdBattleProj : Project = {
+    name: "Origami Bird Battle",
+    description: "Made with a (fluid) group of 20 people in the Brown RISD Game Developers," +
+    "Origami Bird Battle is an intense, lighthearted, and fun 1v1 brawler." + 
+    " We used Godot in this project, and I was one of the only people on the team who had used the engine" +
+    " My primary responsibility for this project was to architect the project from a coding standpoint," +
+    " delegate tasks between about 10 programmers (most of whom had never coded before), help them, and code parts of the project that needed extra support. "
+    + " I had a lot of fun working on this, and it felt like the culmination of a lot of lessons learned from previous projects."
+    + " In particular, retention. Nearly every programmer who was there at the beginning stayed in some capacity to the end," +
+    " this is not a given for our club, and I partially attribute it to my work making sure newcomers felt guided throughout the process." +
+    " If I could go back, I would do more to communicate better with the artists on our team and do more to ensure they know what to do as well.",
+    tools : "Godot and Git",
+    images : [
+        birdbattleScreenshot
+    ], 
+    link : "https://brownrisdgames.itch.io/origami-bird-battle",
+}
+
+export const BirdBattleProjLink : ProjectLinkHolder = {
+    linkTo: "/projects/origamibirdbattle", 
+    photoLink: birdbattleMain, 
+    desc: "Origami Bird Battle is a 1v1 base building and fighting game",
+}
+
 // Skippy
 import skippyMain from "public/games/Skippy/main.png"
 import skippyScreenshot from "public/games/Skippy/screenshot1.png"
@@ -239,11 +267,13 @@ export const NameToProject : { [key: string]: Project }  = {
     ascension : AscensionProj,
     usfps : USFPSProj,
     benny : BennyProj,
-    skippy : SkippyProj
+    skippy : SkippyProj,
+    origamibirdbattle : BirdBattleProj
 }
 
 export const FinishedProjectsLinks : ProjectLinkHolder[] = [
     AtlasSwingsProjLink, 
+    BirdBattleProjLink,
     USFPSProjLink,
     NoteProjLink,
     TetronProjLink,

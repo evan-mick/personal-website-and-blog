@@ -21,13 +21,20 @@ export default function Page() {
             I am a Computer Science and Economics student at Brown University well versed in software engineering and product management. 
             I am also a passionate game developer and musician. This website exists as a place for employeers to see my experiences 
             and for me to show off my software, music, and thoughts in a centralized place.
-            
           </p>
           <br/>
           <p>
-            As a participant in Capitalism, I seek employment. From June to November 2023, I was employeed at 2K Games as a "Software Engineering, Product Management Intern" (a bit of a mouthful, I know haha). 
+            As a participant in Capitalism, I seek gainful employment. 
+            My latest attempt was from June to November 2023, 
+            I was employeed at 2K Games as a "Software Engineering, Product Management Intern" (a bit of a mouthful, I know). 
             There, I helped analyze the onboarding experience and costs of their backend services used accross 2K's titles 
             by incorporating their services in my own Unreal projects, talking to customers, and undergoing market research. 
+          </p>
+          <br/>
+          <p>
+            I am happy to say that, thanks to the purchasing of V-bucks from the credit cards of millions of parents worldwide, 
+            I will be employeed at Epic Games's subsidary Harmonix (the creators of Rock Band) summer 2024 as a "Gameplay Programmer," 
+            for Fortnite where I will work on music experiences for the game using Unreal Engine and C++. 
           </p>
           <br/>
           <p>
