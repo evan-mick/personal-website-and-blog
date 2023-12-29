@@ -2,6 +2,7 @@
 
 import "../globals.css";
 import Header from "./header";
+import { Analytics } from '@vercel/analytics/react';
 
 
 export const metadata = {
@@ -18,6 +19,7 @@ export default function RootLayout({
     <html lang="en" className="max-width-full overflow-y-scroll overflow-x-hidden font-mono">
       <head>
       {/* import "../../node_modules/bootstrap/dist/css/bootstrap.css" */}
+        <meta name="google-site-verification" content="10YJ_yX5uIsmfm4Iho-B_MhhSl9CAVPg1wDEb8qVEK4" />
       </head>
       <body>
         <section className="flex flex-col min-h-screen">
@@ -32,6 +34,7 @@ export default function RootLayout({
 
         </section>
         {/* <div className="h-12 bg-black mt-auto"/> */}
+        <Analytics/>
       </body>
     </html>
   )
