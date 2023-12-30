@@ -30,12 +30,12 @@ export default function RootLayout({
     
           <div className="h-full">
             {children}
-            <Analytics/>
+            
           </div>
 
         </section>
         {/* <div className="h-12 bg-black mt-auto"/> */}
-        
+        <Analytics mode="production"/>
       </body>
     </html>
   )
