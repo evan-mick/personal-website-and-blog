@@ -1,5 +1,6 @@
 import ProjectDisplay from "@/components/ProjectDisplay";
 import { AtlasSwingsProjLink, TetronProjLink } from "@/constants/projectData";
+import { Analytics } from "@vercel/analytics/react";
 import photo from "public/header.jpg";
 
 
@@ -97,6 +98,7 @@ export default function Page() {
       <section className="pt-36">
 
       </section>
+      <Analytics mode="production"/>
     </div>
     
   )

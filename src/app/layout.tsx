@@ -20,6 +20,7 @@ export default function RootLayout({
       <head>
       {/* import "../../node_modules/bootstrap/dist/css/bootstrap.css" */}
         <meta name="google-site-verification" content="10YJ_yX5uIsmfm4Iho-B_MhhSl9CAVPg1wDEb8qVEK4" />
+        <Analytics mode="production"/>
       </head>
       <body>
         <section className="flex flex-col min-h-screen">
@@ -30,13 +31,14 @@ export default function RootLayout({
     
           <div className="h-full">
             {children}
-            
+            <Analytics mode="production"/>
           </div>
-
+          <Analytics mode="production"/>
         </section>
         {/* <div className="h-12 bg-black mt-auto"/> */}
         <Analytics mode="production"/>
       </body>
+      <Analytics mode="production"/>
     </html>
   )
 }
