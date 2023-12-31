@@ -37,7 +37,7 @@ export const BennyProj : Project = {
 	"Looking back, I don’t think there is anything I would have done differently. The game was well received and still gets a surprising number of plays to this day (probably mostly because my friend happens to be an established game dev youtuber). The game ended up really polished and though simple it is an interesting experience.",
     tools : "Unity, C#, Git, and Logic Pro",
     images : [
-        "public/games/Benny/screenshot1.png"
+        "/games/Benny/screenshot1.png"
         // bennyScreenshot
     ], 
     link : "https://polymars.itch.io/benny",
@@ -45,13 +45,13 @@ export const BennyProj : Project = {
 
 export const BennyProjLink : ProjectLinkHolder = {
     linkTo: "/projects/benny", 
-    photoLink: "public/games/Benny/main.png", 
+    photoLink: "/games/Benny/main.png", 
     desc: "Benny is a murder mystery game where you uncover your husband's murderer",
 }
 
 // Origami Bird Battle
-import birdbattleScreenshot from "public/games/BirdBattle/birdbattlescreenshot.png"
-import birdbattleMain from "public/games/BirdBattle/birdbattlefront.png"
+// import birdbattleScreenshot from "public/games/BirdBattle/birdbattlescreenshot.png"
+// import birdbattleMain from "public/games/BirdBattle/birdbattlefront.png"
 
 export const BirdBattleProj : Project = {
     name: "Origami Bird Battle",
@@ -66,19 +66,19 @@ export const BirdBattleProj : Project = {
     " If I could go back, I would do more to communicate better with the artists on our team and do more to ensure they know what to do as well.",
     tools : "Godot and Git",
     images : [
-        "public/games/BirdBattle/birdbattlescreenshot.png"
+        "/games/BirdBattle/birdbattlescreenshot.png"
     ], 
     link : "https://brownrisdgames.itch.io/origami-bird-battle",
 }
 
 export const BirdBattleProjLink : ProjectLinkHolder = {
     linkTo: "/projects/origamibirdbattle", 
-    photoLink: birdbattleMain, 
+    photoLink: "/games/BirdBattle/birdbattlefront.png", 
     desc: "Origami Bird Battle is a 1v1 base building and fighting game",
 }
 
 // Skippy
-import skippyMain from "public/games/Skippy/main.png"
+// import skippyMain from "public/games/Skippy/main.png"
 import skippyScreenshot from "public/games/Skippy/screenshot1.png"
 
 export const SkippyProj : Project = {
@@ -87,20 +87,20 @@ export const SkippyProj : Project = {
     "Looking back, I wish we had done more with the mini-games portion of the experience. I think some work could have been done to communicate it better and make them more interesting. They were also a little bit too difficult (we compensated by making only small portions required to be played at a time).",
     tools : "Unity, C#, and Git",
     images : [
-        skippyScreenshot
+        "/games/Skippy/screenshot1.png"
     ], 
     link : "https://dexmakesgames.itch.io/skippy",
 }
 
 export const SkippyProjLink : ProjectLinkHolder = {
     linkTo: "/projects/skippy", 
-    photoLink: skippyMain, 
+    photoLink: "/games/Skippy/main.png", 
     desc: "Skippy is a full motion video based game where you take care of an alien creature",
 }
 
 // Ascension
-import ascensionMain from "public/games/BRGD/Ascension/main.png"
-import ascensionScreenshot from "public/games/BRGD/Ascension/screenshot1.png"
+// import ascensionMain from "public/games/BRGD/Ascension/main.png"
+// import ascensionScreenshot from "public/games/BRGD/Ascension/screenshot1.png"
 
 export const AscensionProj : Project = {
     name: "Ascension",
@@ -108,20 +108,20 @@ export const AscensionProj : Project = {
     "If I could go back, I wish we improved the lighting. Many of the models look pretty good but the levels seem a bit lifeless. I also think we could have done more to communicate the main mechanics and make the UI look a little better. In general, I think more time should have been spent polishing it, but of course, there are only so many hours we have each semester. It is definitely an idea I would revisit again.",
     tools : "Unity, C#, and Git",
     images : [
-        ascensionScreenshot
+        "/games/BRGD/Ascension/screenshot1.png"
     ], 
     link : "https://brownrisdgames.itch.io/ascension",
 }
 
 export const AscensionProjLink : ProjectLinkHolder = {
     linkTo: "/projects/ascension", 
-    photoLink: ascensionMain, 
+    photoLink: "/games/BRGD/Ascension/main.png", 
     desc: "Ascension is a zero gravity first person shooter",
 }
 
 // USFPS
-import usfpsMain from "public/games/BRGD/USFPS/main.png"
-import usfpsScreenshot from "public/games/BRGD/USFPS/screenshot1.png"
+// import usfpsMain from "public/games/BRGD/USFPS/main.png"
+// import usfpsScreenshot from "public/games/BRGD/USFPS/screenshot1.png"
 
 export const USFPSProj : Project = {
     name: "US(F)PS",
@@ -130,20 +130,20 @@ export const USFPSProj : Project = {
     "If I were to go back, there are some design decisions that I wish we scrapped earlier, and I also wish we had thought more programmatically about what the game should look like earlier on. I think we didn’t have quite enough time to polish. Still, though, the project ended up being pretty fun, and I think we achieved our original goal.",
     tools : "Unreal, Blueprints, and Git",
     images : [
-        usfpsScreenshot
+        "/games/BRGD/USFPS/screenshot1.png"
     ], 
     link : "https://brownrisdgames.itch.io/usfps",
 }
 
 export const USFPSProjLink : ProjectLinkHolder = {
     linkTo: "/projects/usfps", 
-    photoLink: usfpsMain, 
+    photoLink: "/games/BRGD/USFPS/main.png", 
     desc: "Deliver packages and explode oncoming traffic in US(F)PS",
 }
 
 // Boogie Brawl
-import bbMain from "public/games/BRGD/BoogieBrawl/main.png"
-import bbScreenshot from "public/games/BRGD/BoogieBrawl/screenshot1.png"
+// import bbMain from "public/games/BRGD/BoogieBrawl/main.png"
+// import bbScreenshot from "public/games/BRGD/BoogieBrawl/screenshot1.png"
 
 export const BBProj : Project = {
     name: "Boogie Brawl",
@@ -151,14 +151,15 @@ export const BBProj : Project = {
 	"If I could go back, I think I would have added or changed some mechanics to make the whole thing a little more interesting. I also would have tried to polish it more. I remember the project getting to a somewhat stagnant point halfway through, and I think I’ve since learned more about what to do in that type of scenario. Overall though, I am incredibly happy with the outcome. ",
     tools : "Unity, C#, and Git",
     images : [
-        bbScreenshot
+        "/games/BRGD/BoogieBrawl/screenshot1.png"
+
     ], 
     link : "https://brownrisdgames.itch.io/boogie-brawl",
 }
 
 export const BBProjLink : ProjectLinkHolder = {
     linkTo: "/projects/boogiebrawl", 
-    photoLink: bbMain, 
+    photoLink: "/games/BRGD/BoogieBrawl/main.png", 
     desc: "Boogie Brawl: a 2 player dance battle fighting game",
 }
 
@@ -172,14 +173,14 @@ export const TTHProj : Project = {
     "If I could go back, one thing I would have done differently is spent more time designing and using the level. While we had worked on the mechanics are art throughout the duration of the semester, it wasn’t until the last couple of sessions that we blocked out and made the level. It is one of only a few 3D games ever made by Brown RISD Game Developers, these types of mistakes are hard to foresee, but I know for next time. ",
     tools : "Unity, C#, and Git",
     images : [
-        tthScreenshot
+        "/games/BRGD/TellTaleHeart/screenshot2.jpeg"
     ], 
     link : "https://brownrisdgames.itch.io/tell-tale-heart",
 }
 
 export const TTHProjLink : ProjectLinkHolder = {
     linkTo: "/projects/telltaleheart", 
-    photoLink: tthMain, 
+    photoLink: "/games/BRGD/TellTaleHeart/main.jpeg", 
     desc: "Tell Tale Heart is a first person stealth horror game",
 }
 
@@ -200,14 +201,14 @@ export const NoteProj : Project = {
     // "I was responsible for programming and design on this project.",
     tools : "Unity, C#, and Git",
     images : [
-        noteScreenshot
+        "/games/NoteInTheWind/screenshot2.png"
     ], 
     link : "https://elsira.itch.io/a-note-in-the-wind",
 }
 
 export const NoteProjLink : ProjectLinkHolder = {
     linkTo: "/projects/noteinthewind", 
-    photoLink: noteMain, 
+    photoLink: "/games/NoteInTheWind/main.png", 
     desc: "In a Note in the Wind, you control the wind to guide a paper airplane",
 }
 
@@ -221,14 +222,14 @@ export const AtlasSwingsProj : Project = {
     "Working on this project was incredibly fun and rewarding. At the start, I was on break and helped make the initial prototype. When we returned to school, we rented a conference room to stay in to work together at night. Lots of bug fixes, banter, and snacks were had in that conference room. At the end of it, we did not expect much from it, but when the announcements were made I remember going to one of Brown’s dining areas to watch to see what the results would be, and was incredibly surprised when we ended up winning. Afterward, we all got dinner together using some of the cash prizes from the competition. It was one of only a few times I have been properly paid for game development at that time. Overall I learned a lot and it was a great experience. ",
     tools : "Unity, C#, Git, Geopipe NY assets",
     images : [
-        asScreen1
+        "/games/AtlasSwings/screenshot1.png",
     ], 
     link : "https://cindy-lithium.itch.io/atlas-swings",
 }
 
 export const AtlasSwingsProjLink : ProjectLinkHolder = {
     linkTo: "/projects/atlasswings", 
-    photoLink: asMain, 
+    photoLink: "/games/AtlasSwings/main.png", 
     desc: "Winner of the first Geopipe Gamejam, Atlas Swings is a destructive golf simulator set in New York",
 }
 
@@ -246,16 +247,16 @@ export const TetronProj : Project = {
     tools : "Gamemaker Studio 2, Aesprite, Steam SDK",
     images : [
         
-        tetronScrn2,
-        tetronScrn3,
-        tetronScrn4,
+        "/games/Tetron/screenshot2.png",
+        "/games/Tetron/screenshot3.png",
+        "/games/Tetron/screenshot4.png",
     ], 
     link : "https://store.steampowered.com/app/1348960/Tetron/",
 }
 
 export const TetronProjLink : ProjectLinkHolder = {
     linkTo: "/projects/tetron", 
-    photoLink: photo, 
+    photoLink: "/header.jpg", 
     desc: "Tetron is a twin stick action roguelite on Steam",
 }
 

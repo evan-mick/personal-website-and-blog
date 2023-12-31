@@ -1,6 +1,9 @@
+'use client'
 import { NameToProject } from "@/constants/projectData"
 import { Project } from "@/constants/types";
+import useImagePreloader from "@/hooks/useImagePreloader";
 import Image from "next/image";
+
 
 
 export default function Page({ params }: { params: { project: string } }) {
@@ -10,9 +13,11 @@ export default function Page({ params }: { params: { project: string } }) {
     if (!info) {
         return <div>error</div>
     }
+    const imagesPreloaded  = useImagePreloader(info.images)
 
     return (
-
+        <div>
+    { imagesPreloaded ?
     <section className="m-20 p-10 rounded-md shadow-lg h-full">
         <div className="flex flex-wrap justify-evenly h-full">
             
@@ -23,13 +28,13 @@ export default function Page({ params }: { params: { project: string } }) {
             </div>
                 
             
-            <div className="object-scale-down max-w-4xl">
+            <div className="width-full object-scale-down max-w-4xl">
                     {/* TODO: make this a crossfade or carousel of many images instead of one */}
                     {/* {info.images?.map((img,i) => (
                         <Image key={i} src={img} alt={"image"}/>
                     ))} */}
 
-                    {info.images && <Image  src={info.images[0]} alt="image of project"/>}
+                    {info.images && <img src={info.images[0]} alt="image of project"/>}
 
 
 
@@ -54,6 +59,8 @@ export default function Page({ params }: { params: { project: string } }) {
             </p>
         </div>
     </section>
+    : <section></section>}
+    </div>
 
 
 
