@@ -7,7 +7,7 @@ import { useEffect } from 'react'
 
 export default function Page() {
   
-  redirect('/dashboard');
+  // redirect('/dashboard');
 
   return (
     <div className="flex h-screen w-screen items-center justify-center">
