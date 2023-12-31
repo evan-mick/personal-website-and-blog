@@ -3,7 +3,7 @@
 import "../globals.css";
 import Header from "./header";
 import { Analytics } from '@vercel/analytics/react';
-
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 export const metadata = {
   title: 'Evan Mickelson',
@@ -31,14 +31,14 @@ export default function RootLayout({
     
           <div className="h-full">
             {children}
-            <Analytics mode="production"/>
           </div>
-          <Analytics mode="production"/>
         </section>
         {/* <div className="h-12 bg-black mt-auto"/> */}
-        <Analytics mode="production"/>
+        <Analytics mode={'production'} />;
+        <SpeedInsights />
       </body>
-      <Analytics mode="production"/>
+      
+     
     </html>
   )
 }
