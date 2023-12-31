@@ -2,7 +2,7 @@
 title: "test md thang"
 description: "Creat test thanslakgjdalskf"
 date: "2023-12-27"
-img: "public/games/Skippy/screenshot1.png"
+img: "public/projects/quakeclonecover.png"
 ---
 
 #### HIIILDSKJFSKLDJFLKA

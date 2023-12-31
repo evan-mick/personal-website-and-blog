@@ -28,8 +28,8 @@ import { ProjectLinkHolder, Project } from "./types";
 
 
 // Benny
-import bennyMain from "public/games/Benny/main.png"
-import bennyScreenshot from "public/games/Benny/screenshot1.png"
+// import bennyMain from "public/games/Benny/main.png"
+// import bennyScreenshot from "public/games/Benny/screenshot1.png"
 
 export const BennyProj : Project = {
     name: "Benny",
@@ -37,14 +37,15 @@ export const BennyProj : Project = {
 	"Looking back, I don’t think there is anything I would have done differently. The game was well received and still gets a surprising number of plays to this day (probably mostly because my friend happens to be an established game dev youtuber). The game ended up really polished and though simple it is an interesting experience.",
     tools : "Unity, C#, Git, and Logic Pro",
     images : [
-        bennyScreenshot
+        "public/games/Benny/screenshot1.png"
+        // bennyScreenshot
     ], 
     link : "https://polymars.itch.io/benny",
 }
 
 export const BennyProjLink : ProjectLinkHolder = {
     linkTo: "/projects/benny", 
-    photoLink: bennyMain, 
+    photoLink: "public/games/Benny/main.png", 
     desc: "Benny is a murder mystery game where you uncover your husband's murderer",
 }
 
@@ -65,7 +66,7 @@ export const BirdBattleProj : Project = {
     " If I could go back, I would do more to communicate better with the artists on our team and do more to ensure they know what to do as well.",
     tools : "Godot and Git",
     images : [
-        birdbattleScreenshot
+        "public/games/BirdBattle/birdbattlescreenshot.png"
     ], 
     link : "https://brownrisdgames.itch.io/origami-bird-battle",
 }

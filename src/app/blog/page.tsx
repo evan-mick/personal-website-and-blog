@@ -1,5 +1,4 @@
 import ProjectDisplayHolder from "@/components/ProjectDisplayHolder";
-import { AvailableBlogs } from "@/constants/blogPostData";
 import { BlogPostMetaData, ProjectLinkHolder } from "@/constants/types";
 
 import blogtest from "public/games/Skippy/screenshot1.png"
@@ -22,7 +21,7 @@ const getPostsData = (): BlogPostMetaData[] => {
             name: matterResult.data.title,
             description: matterResult.data.description,
             date: matterResult.data.date,
-            img: blogtest,//matterResult.data.img,
+            img: "public/projects/Skippy/screenshot1.png",//matterResult.data.img,
             url: `${"blog"}/${filename.replace(".md", "")}`,
         };
     });
