@@ -5,7 +5,7 @@
 export const menuItems = [
     {
       title: 'Home',
-      url: '/dashboard',
+      url: '/',
     },
     /*{
       title: 'Blog',
@@ -28,6 +28,7 @@ export const menuItems = [
     //   url: '/blog',
     // },
   ];
+  
 
 export default function Header() {
     return (

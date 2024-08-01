@@ -23,5 +23,6 @@ export interface ProjectLinkHolder {
     photoLink: string,
     // photoLink: StaticImport, 
     desc: string,
+    title?: string, 
 }
 

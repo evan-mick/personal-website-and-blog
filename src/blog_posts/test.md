@@ -3,6 +3,7 @@ title: "test md thang"
 description: "Creat test thanslakgjdalskf"
 date: "2023-12-27"
 img: "/projects/quakeclonecover.png"
+show: false 
 ---
 
 #### HIIILDSKJFSKLDJFLKA
