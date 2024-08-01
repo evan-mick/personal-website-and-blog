@@ -23,7 +23,7 @@ export default function Page() {
           <div className="whitespace-pre-wrap m-10 md:mx-48 xl:mx-96">
             <p>
               I am a Computer Science and Economics student at Brown University well versed in software engineering and product management. 
-              I am also a passionate game developer and musician. This website exists as a place for employeers to see my experiences 
+              I am also a passionate game developer and musician. This website exists as a place for employers to see my experiences 
               and for me to show off my software, music, and thoughts in a centralized place.
             </p>
             <br/>
@@ -31,12 +31,12 @@ export default function Page() {
               As a participant in Capitalism, I seek gainful employment. 
               My latest attempt was from June to August of 2024, 
               I am happy to say that, thanks to the purchasing of V-bucks from the credit cards of millions of parents worldwide, 
-              this summer (2024) I have been employeed at Epic Games as a "Gameplay Programming Intern," 
+              this summer (2024) I have been employed at Epic Games as a "Gameplay Programming Intern," 
               where I have worked on Fortnite Festival using Unreal Engine and C++ on the Harmonix team. 
             </p>
             <br/>
             <p>
-              From June to November of 2023, I was employeed at 2K Games as a "Software Engineering, Product Management Intern" (a bit of a mouthful, I know). 
+              From June to November of 2023, I was employed at 2K Games as a "Software Engineering, Product Management Intern" (a bit of a mouthful, I know). 
               There, I helped analyze the onboarding experience and costs of their backend services used accross 2K's titles 
               by incorporating their services in my own Unreal projects, talking to customers, and undergoing market research. 
             </p>
@@ -79,7 +79,7 @@ export default function Page() {
               In the summer of 2022, I taught the engine to 30 teenagers at my time camp counselling at iDTech. 
               I have also used the engine to help create US(FPS), a packaged themed first person shooter, in Brown RISD Game Developers. 
               Lastly, I made a prototype map for the VR game Pavlov, as well as a VR fireplace simulator for the Brown 2023 hackathon.</li>
-              <li className="mt-2"><b>Go</b> I used Go to implement the RAFT distributed dictionary protocol for a distributed systems course. 
+              <li className="mt-2"><b>Go:</b> I used Go to implement the RAFT distributed dictionary protocol for a distributed systems course. 
               Along with that, I am using it for the backend of a news headline and summarizing website for webscraping, serverside rendering, API handling, and database access.</li>
               <li className="mt-2"><b>React, Typescript, CSS:</b> Along with using Next for this website, I am currently using React Native for a social media mobile app. 
               I have also made use of React for school projects in my school's software engineering course and for the frontend for a WIP project for Brown's Entrepreneurship Club.</li>
@@ -96,7 +96,7 @@ export default function Page() {
               See the projects section for information about the released projects </li>
               <li className="mt-2"><b>Godot:</b>Along with many small prototypes, I was the lead programmer for Origami Bird Battle with in the Brown-RISD Game Developers. 
               I helped program, design, and architect the game and its systems while helping 10 other programmers with varying skill levels learn and use Godot effectively.</li>
-              <li className="mt-2"><b>Python</b>: For my data structures and algorithms class, I implemented the page rank algorithm using Python.</li>
+              <li className="mt-2"><b>Python:</b> For my data structures and algorithms class, I implemented the page rank algorithm using Python.</li>
               <li className="mt-2"><b>Java: </b>Using Java I have created a Wolfenstein-like rendering engine. I also TA's 2D game engines where I helped program, design, and debug other students game engines. 
               In addition, I used Java to create the backend for a course planning website for my software engineering course. </li>
             </ul>
