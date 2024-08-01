@@ -9,11 +9,10 @@ import Image from "next/image";
 export default function Page({ params }: { params: { project: string } }) {
 
     const info: Project = NameToProject[params.project];
-
+    const imagesPreloaded  = useImagePreloader(!info ? undefined : info.images)
     if (!info) {
         return <div>error</div>
     }
-    const imagesPreloaded  = useImagePreloader(info.images)
 
     return (
         <div>

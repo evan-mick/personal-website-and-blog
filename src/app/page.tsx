@@ -34,13 +34,12 @@ export default function Page() {
               this summer (2024) I have been employeed at Epic Games as a "Gameplay Programming Intern," 
               where I have worked on Fortnite Festival using Unreal Engine and C++ on the Harmonix team. 
             </p>
+            <br/>
             <p>
               From June to November of 2023, I was employeed at 2K Games as a "Software Engineering, Product Management Intern" (a bit of a mouthful, I know). 
               There, I helped analyze the onboarding experience and costs of their backend services used accross 2K's titles 
               by incorporating their services in my own Unreal projects, talking to customers, and undergoing market research. 
             </p>
-            <br/>
-            
             <br/>
             <p>
               At Brown University, I am apart of the executive board for Brown RISD Game Developers. 
@@ -49,7 +48,7 @@ export default function Page() {
             </p>
             <br/>
             <p>
-              The website you are seeing was coded from scratch by me using Next JS with Tailwind CSS. You can find the code for it <a className="underline text-blue-400" href="https://github.com/evan-mick/personal-website-and-blog">Here</a> 
+              The website you are seeing was by me using Next JS with Tailwind CSS. You can find the code for it <a className="underline text-blue-400" href="https://github.com/evan-mick/personal-website-and-blog">Here</a> 
             </p>
           </div>
         </section>
