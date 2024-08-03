@@ -49,10 +49,8 @@ const getPostContent = (slug: string) => {
 async function getData(postFrom: string) {
     // Fetch or generate your post content here
     const post = getPostContent(postFrom);
-    console.log("ONE");
     const serialized = await serialize(post.content);
-  
-    console.log("TWO");
+
     return {
       props: {
         serialized,
@@ -66,12 +64,11 @@ export default async function Page({ params }: { params: { post: string } }) {
     const props = (await getData(params.post));
     const post = props.props.post;
     const serialized = props.props.serialized;
-    console.log("THREE");
     // console.log(props)
 
     return (<div>
         {post.data.show ? 
-        <section className="m-20 p-10 rounded-md shadow-lg h-full block">
+        <section className="m-20 p-20 rounded-md shadow-lg h-full block">
             <h1 className="text-6xl mb-10">{post.data.title}</h1>
              <Image 
                         src={post.data.img}

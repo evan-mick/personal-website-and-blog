@@ -22,7 +22,7 @@ export default function Page() {
         <section className="w-full">
           <div className="whitespace-pre-wrap m-10 md:mx-48 xl:mx-96">
             <p>
-              I am a Computer Science and Economics student at Brown University well versed in software engineering and product management. 
+            I am a Computer Science and Economics student at Brown University, and I am well-versed in software engineering and product management. 
               I am also a passionate game developer and musician. This website exists as a place for employers to see my experiences 
               and for me to show off my software, music, and thoughts in a centralized place.
             </p>
@@ -37,18 +37,16 @@ export default function Page() {
             <br/>
             <p>
               From June to November of 2023, I was employed at 2K Games as a "Software Engineering, Product Management Intern" (a bit of a mouthful, I know). 
-              There, I helped analyze the onboarding experience and costs of their backend services used accross 2K's titles 
-              by incorporating their services in my own Unreal projects, talking to customers, and undergoing market research. 
+              There, I helped analyze the onboarding experience and costs of their backend services used across 2K's titles 
+              by incorporating them in my own Unreal projects, talking to customers, and undergoing market research. 
             </p>
             <br/>
             <p>
-              At Brown University, I am apart of the executive board for Brown RISD Game Developers. 
-              During my time, I have contributed to the development of 5 video games, 
-              helped managed our yearly average of roughly 100 students, and taught other students how to effectively use Unity and Unreal.
+              At Brown University, I am part of the executive board for Brown RISD Game Developers. During my time there, I have contributed to the development of five video games, helped manage our yearly average of roughly 100 students, and taught other students how to use Unity and Unreal effectively.
             </p>
             <br/>
             <p>
-              The website you are seeing was by me using Next JS with Tailwind CSS. You can find the code for it <a className="underline text-blue-400" href="https://github.com/evan-mick/personal-website-and-blog">Here</a> 
+              The website you are see was by *yours truly* using Next JS with Tailwind CSS. You can find the code for it <a className="underline text-blue-400" href="https://github.com/evan-mick/personal-website-and-blog">Here</a> 
             </p>
           </div>
         </section>

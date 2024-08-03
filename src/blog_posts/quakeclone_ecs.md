@@ -61,17 +61,18 @@ Here is an example system
 
 ```cpp
 ecs.registerSystem([](ECS* e, entity_t ent, float delta) {
-				// Get reference to current entity's DestroyData Component information
-        DestroyData* destroyDat;
-				destroyDat = getComponentData<DestroyData>(e, ent, FLN_DESTROYTIME);
+      // Get reference to current entity's DestroyData Component information
+      DestroyData* destroyDat;
+      destroyDat = getComponentData<DestroyData>(e, ent, FLN_DESTROYTIME);
 
-				// Decrement and destroy if time runs out
-        destroyDat->timer -= delta;
+      // Decrement and destroy if time runs out
+      destroyDat->timer -= delta;
 
-        if (destroyDat->timer <= 0.f) {
-            e->queueDestroyEntity(ent);
-        }
-		// Only run on entities with the "FLN_DESTROYTIME" flag in their bitmask
+      if (destroyDat->timer <= 0.f) {
+        e->queueDestroyEntity(ent);
+      }
+
+    // Only run on entities with the "FLN_DESTROYTIME" flag in their bitmask
     }, { FLN_DESTROYTIME });
 ```
 
