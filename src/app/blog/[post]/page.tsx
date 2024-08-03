@@ -36,8 +36,10 @@ type Props = {
   
 const getPostContent = (slug: string) => {
     console.log(slug);
-    const folder = "src/blog_posts";
-    const fileContents = fs.readFileSync(`${folder}/${slug}.md`, "utf-8");
+    // const folder = "src/blog_posts";
+    // const fileContents = fs.readFileSync(`${folder}/${slug}.md`, "utf-8");
+    const folder = path.join(process.cwd(), `src/blog_posts`, `${slug}.md`);
+    const fileContents = fs.readFileSync(folder, "utf-8");
     const matterResult = matter(fileContents);
     return matterResult;
     // return serialize(fileContents)//matterResult;
