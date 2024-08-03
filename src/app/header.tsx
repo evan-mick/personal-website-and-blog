@@ -15,6 +15,10 @@ export const menuItems = [
       title: 'Projects',
       url: '/projects',
     },
+    {
+      title: 'Blog',
+      url: '/blog',
+    },
     /*{
       title: 'Music',
       url: '/music',
@@ -23,10 +27,7 @@ export const menuItems = [
       title: 'Contact',
       url: '/contact',
     },
-    // {
-    //   title: 'Blog',
-    //   url: '/blog',
-    // },
+
   ];
   
 

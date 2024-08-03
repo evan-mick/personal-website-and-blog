@@ -26,6 +26,7 @@ export default function RootLayout({
       <script
         crossOrigin=""
         src="https://unpkg.com/@highlightjs/cdn-assets@11.9.0/highlight.min.js"
+        // src="https://unpkg.com/@highlightjs/cdn-assets@11.9.0/highlight.min.js"
       ></script>
       {/* import "../../node_modules/bootstrap/dist/css/bootstrap.css" */}
         {/* <meta name="google-site-verification" content="10YJ_yX5uIsmfm4Iho-B_MhhSl9CAVPg1wDEb8qVEK4" /> */}

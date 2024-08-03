@@ -1,18 +1,23 @@
 ---
 title: "Multiplayer FPS From Scratch: ECS"
 description: "How I implemented an Entity Component System for a 2 week quake clone project"
-date: "2024-1-03"
+date: "2024-8-01"
+lastUpdated: "2024-8-01"
 img: "/projects/quakeclonecover.png"
 show: true
 ---
 
 
-Video: **https://drive.google.com/file/d/1oyknDe_eDyTXVMn1sffx-3-eQqQfbj4V/view?usp=sharing**
-
-**https://github.com/evan-mick/quake-clone**
 
 
-This semester I was in the privileged (and stressful) position of being registered in both Graphics and Networking courses. I was also lucky that both courses had open ended final projects. So, I opted to make a multiplayer deathmatch arena game in the style of Quake. In 2 weeks, I (along with 3 other people) designed a renderer, physics, networking, and gameplay systems using C++ and OpenGL. Though there is a ton of room for improvement, I think we pulled it off okay!
+**[Link to demonstration video](https://drive.google.com/file/d/1oyknDe_eDyTXVMn1sffx-3-eQqQfbj4V/view?usp=sharing)**
+
+**[Link to relevant source code from Github](https://github.com/evan-mick/quake-clone/tree/main/src/core)**
+
+
+In fall of 2023, I was in the privileged (and stressful) position of being registered in both Graphics and Networking courses. 
+
+I was also lucky that both courses had open ended final projects. So, I opted to make a multiplayer deathmatch arena game in the style of Quake. In 2 weeks, I (along with 3 other people) designed a renderer, physics, networking, and gameplay systems using C++ and OpenGL. Though there is a ton of room for improvement, I think we pulled it off okay!
 
 For this first part, I will talk about the underlying Entity Component System which allowed for ease of networking and interaction between different objects. 
 
@@ -76,7 +81,7 @@ The first argument is a lambda function, which has to have the argument list sho
 
 Why did I emphasize that the memory is contiguous? Because one key benefit of ECS is that it allows for many cache hits (if you don’t know what that means, its out of the scope of this article, but in short your computer hardware is optimized for when memory is accessed contiguously, and can be upwards of 25x faster (!!!) if taken into account). This is the predominant reason it is much faster (especially for games with many objects) than alternate approaches to engine design. 
 
-From a networking perspective, the benefits of this is that it is incredibly easy and efficient to hold, sync, and update state. Just share and edit components, and the systems should just work with the new information. This is a stark contrast with node (ala Godot) or object oriented component architectures (ala Unity) which often require much more manual syncing and editing to allow clients to be synced up. 
+From a networking perspective, the benefits of this is that it is incredibly easy and efficient to hold, sync, and update state. Just share and edit components (literally memcpy), and the systems should just work with the new information. This is a stark contrast with node (ala Godot) or object oriented component architectures (ala Unity) which often require much more manual syncing and editing to allow clients to be synced up. 
 
 Other ECS systems i’ve found online use much more complicated mechanisms with multiple classes for components, systems, etc. which is likely more extensible and battle-ready than what I’ve created. I opted to use one class for all ECS logic and instead of abstracting systems to classes I chose to make them C++ functions. With that said, here’s an overview of how I stored data in my implementation.
 
@@ -87,10 +92,7 @@ typedef unsigned char entityType_t;
 typedef std::function<void(struct ECS*, entity_t, float)> system_t;
 typedef std::function<void(entity_t)> entbroadcast_t;
 
-// IN THEORY, these expressions, and any of the functions, 
-// should not have to be edited
-// if you need more space for components or entity ID's, 
-// just change the underlying typedef above
+// Maximum entities and components based on type data
 constexpr entity_t MAX_ENT_VAL = -1;
 constexpr size_t MAX_ENTITY = MAX_ENT_VAL + 1; // MAX VALUE OF ENTITY_T
 constexpr int MAX_COMPONENTS = sizeof(flags_t) * 8;
@@ -131,4 +133,6 @@ private:
 
 The setup at the top ensures that for whatever type definition you put, all of the arrays and sizing will be adjusted to be the max value. If I were to change entity_t from a char to a short, then all of the array sizing and values would be updated to accommodate (for char to short they’d all go from 256 entities to 65536 entities) This could quickly spiral to make all of the arrays way to big, but I put that in place as a start. 
 
-Also, other ECS implementations usually don’t just have fixed sized arrays. Because the project is small in scope, it felt “right” and was easy to implement and made copying and setting data much easier. An alternative that I’ve seen is using 2 vectors, one that stores entity→index data and another that stores index→entity data, and with that when objects get destroyed you can move the top object to the destroyed index in the array and delete and/or ignore the top which maintains density. For a more thorough explanation, check here: https://austinmorlan.com/posts/entity_component_system/
+Also, other ECS implementations usually don’t just have fixed sized arrays. Because the project is small in scope, it felt “right” and was easy to implement and made copying and setting data much easier. An alternative that I’ve seen is using 2 vectors, one that stores entity→index data and another that stores index→entity data, and with that when objects get destroyed you can move the top object to the destroyed index in the array and delete and/or ignore the top which maintains density. For a more thorough explanation, check here: **[https://austinmorlan.com/posts/entity_component_system/](https://austinmorlan.com/posts/entity_component_system/)**
+
+So there is an overview of the entity component system! A ton of detail was left out, and I am hoping to go more in depth on future parts. I am planning on writing similar posts for the network and physics systems. Thank you for reading!
