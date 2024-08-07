@@ -260,6 +260,52 @@ export const TetronProjLink : ProjectLinkHolder = {
     desc: "Tetron is a twin stick action roguelite on Steam",
 }
 
+
+// OPEN GL GO
+export const ShaderEngineProj : Project = {
+    name: "Shader Engine",
+    description: "In Fall of 2023, I took a graphics programming course. It kickstarted my interest in making shaders, mainly post processing effects. " +
+    "Around the same time, I started a music project and I wanted to create visuals for it. I used Shadertoy to do this, but I quickly got frustrated by its limitations. " + 
+    "Namely the fact that its a website, so I couldn't use my own IDE (without doing a lot of other work), and that its video recording feature was subpar at best. " + 
+    "Because of these gripes, my interest in OpenGl, and wanting to learn Go, I decided to make a \"Shader Engine\" (instead of a \"toy\")." +
+    "It currently supports recording at any inputted FPS, using video and images as sampler inputs, and visually it has the same capabilities as Shadertoy. " +  
+    "Going forward, I'd like to do more work to get audio capabilities, " + 
+    "as well as potentially creating a format for making scripted sequences using shaders that sync with audio",
+    tools : "Go, OpenGl",
+    images : [
+        "/projects/shaderengine.png"
+    ], 
+    link : "",
+}
+
+export const ShaderEngineProjLink : ProjectLinkHolder = {
+    linkTo: "/projects/shaderengine", 
+    photoLink: "/projects/shaderengine.png", 
+    desc: "Shader Engine is a tool for locally designing shaders",
+}
+
+
+
+export const HeadlinerProj : Project = {
+    name: "The Headliner",
+    description: "Browsing the news can be frustrating. Either you browse headlines and don't get enough information, or you have to go through entire articles." +
+    "The Headliner is a side project of mine dedicated to being the in between experience. It uses RSS feeds, webscraping, templating, and Google's Gemini to scrap and summarize " + 
+    "news articles and present them in a digestible way. The website is designed to be server side rendered periodically with a new batch of articles every few hours, and also to be " +
+    "as lightweight as possible to be accessible from low service connections. In short, every few hours it scraps a list of websites, summarizes articles from them, stores them on a database, " +
+    "then server side renders a website based on the articles, and serves the website to http clients. I had a ton of fun and learned a lot from this project.",
+    tools : "Go, SQL, Google Cloud Services, Google Gemini",
+    images : [
+    ], 
+    link : "",
+}
+export const HeadlinerProjLink : ProjectLinkHolder = {
+    linkTo: "/projects/headliner", 
+    photoLink: "/header.jpg", 
+    desc: "The Headliner is a news summarizing and skimming website",
+}
+
+
+
 export const NameToProject : { [key: string]: Project }  = {
     tetron : TetronProj,
     atlasswings : AtlasSwingsProj,
@@ -270,11 +316,13 @@ export const NameToProject : { [key: string]: Project }  = {
     usfps : USFPSProj,
     benny : BennyProj,
     skippy : SkippyProj,
-    origamibirdbattle : BirdBattleProj
+    origamibirdbattle : BirdBattleProj,
+    shaderengine : ShaderEngineProj
 }
 
 export const FinishedProjectsLinks : ProjectLinkHolder[] = [
     AtlasSwingsProjLink, 
+    ShaderEngineProjLink,
     BirdBattleProjLink,
     USFPSProjLink,
     NoteProjLink,
