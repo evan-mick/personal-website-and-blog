@@ -2,8 +2,8 @@
 'use client'
 
 import React from  'react';
-import { render} from  'react-dom';
-import ShadertoyReact from 'shadertoy-react';
+// import { render} from  'react-dom';
+// import ShadertoyReact from 'shadertoy-react';
 
 var fs = `
 void mainImage( out vec4 fragColor, in vec2 fragCoord ) {
@@ -14,6 +14,6 @@ void mainImage( out vec4 fragColor, in vec2 fragCoord ) {
 
 export const ShaderBackground = () =>
   ( <div className='fixed p-0 m-0 top-0 left-0 w-full h-screen' style={{zIndex: -1}}>
-    <ShadertoyReact fs={fs}/>
+    {/* <ShadertoyReact fs={fs}/> */}
     </div>
   );
