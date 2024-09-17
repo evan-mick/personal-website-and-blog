@@ -5,7 +5,7 @@ import Image from 'next/image'
 import { Router, useRouter } from 'next/router'
 import { useEffect } from 'react'
 import ProjectDisplay from '@/components/ProjectDisplay';
-import { AtlasSwingsProjLink, TetronProjLink } from '@/constants/projectData';
+import { AtlasSwingsProjLink, HeadlinerProj, HeadlinerProjLink, TetronProjLink } from '@/constants/projectData';
 
 export default function Page() {
   
@@ -31,18 +31,19 @@ export default function Page() {
               As a participant in Capitalism, I seek gainful employment. 
               My latest attempt was from June to August of 2024, 
               I am happy to say that, thanks to the purchasing of V-bucks from the credit cards of millions of parents worldwide, 
-              this summer (2024) I have been employed at Epic Games as a "Gameplay Programming Intern," 
+              this summer (2024) I was employed at Epic Games as a "Gameplay Programming Intern," 
               where I have worked on Fortnite Festival using Unreal Engine and C++ on the Harmonix team. 
             </p>
             <br/>
             <p>
-              From June to November of 2023, I was employed at 2K Games as a "Software Engineering, Product Management Intern" (a bit of a mouthful, I know). 
+              From June to November of 2023, I worked at 2K Games as a "Software Engineering, Product Management Intern" (a bit of a mouthful, I know). 
               There, I helped analyze the onboarding experience and costs of their backend services used across 2K's titles 
               by incorporating them in my own Unreal projects, talking to customers, and undergoing market research. 
             </p>
             <br/>
             <p>
               At Brown University, I am part of the executive board for Brown RISD Game Developers. During my time there, I have contributed to the development of five video games, helped manage our yearly average of roughly 100 students, and taught other students how to use Unity and Unreal effectively.
+              I have also been a TA for two computer science courses, Computer Graphics, and 2D Game engines. 
             </p>
             <br/>
             <p>
@@ -56,7 +57,7 @@ export default function Page() {
             <h4 className="text-4xl text-center">Featured Projects</h4>
           </div>
           <div className="flex flex-wrap gap-16 p-12 justify-center">
-            <ProjectDisplay linkTo={AtlasSwingsProjLink.linkTo} photoLink={AtlasSwingsProjLink.photoLink} desc={AtlasSwingsProjLink.desc}/>
+            <ProjectDisplay linkTo={HeadlinerProjLink.linkTo} photoLink={AtlasSwingsProjLink.photoLink} desc={AtlasSwingsProjLink.desc}/>
             <ProjectDisplay linkTo={TetronProjLink.linkTo} photoLink={TetronProjLink.photoLink} desc={TetronProjLink.desc}/>
           </div>
         </section>

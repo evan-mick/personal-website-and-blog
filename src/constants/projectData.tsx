@@ -292,16 +292,19 @@ export const HeadlinerProj : Project = {
     "The Headliner is a side project of mine dedicated to being the in between experience. It uses RSS feeds, webscraping, templating, and Google's Gemini to scrap and summarize " + 
     "news articles and present them in a digestible way. The website is designed to be server side rendered periodically with a new batch of articles every few hours, and also to be " +
     "as lightweight as possible to be accessible from low service connections. In short, every few hours it scraps a list of websites, summarizes articles from them, stores them on a database, " +
-    "then server side renders a website based on the articles, and serves the website to http clients. I had a ton of fun and learned a lot from this project.",
-    tools : "Go, SQL, Google Cloud Services, Google Gemini",
+    "then server side renders a website based on the articles, and serves the website to http clients. Lastly, I use Docker to containerize the website to allow for easy hosting from any device, " +
+    "and use Cloudflare's tunnel service for security and to allow for connections without the use of port forwarding. I had a ton of fun and learned a lot from this project. " + 
+    "(OF NOTE, there is not a lot of uptime as I frequently turn on and off the device hosting this, feel free to click the link and check however!)",
+    tools : "JS/HTML/CSS, Go, SQL, Docker, Cloudflare tunnel, Google Cloud Services, Google Gemini",
     images : [
+        "/projects/headliner.png"
     ], 
-    link : "",
+    link : "https://theheadliner.news",
 }
 export const HeadlinerProjLink : ProjectLinkHolder = {
     linkTo: "/projects/headliner", 
-    photoLink: "/header.jpg", 
-    desc: "The Headliner is a news summarizing and skimming website",
+    photoLink: "/projects/headlinertitle.png", 
+    desc: "The Headliner is a news summarizer and aggregating website",
 }
 
 
@@ -317,12 +320,17 @@ export const NameToProject : { [key: string]: Project }  = {
     benny : BennyProj,
     skippy : SkippyProj,
     origamibirdbattle : BirdBattleProj,
-    shaderengine : ShaderEngineProj
+    shaderengine : ShaderEngineProj,
+    headliner : HeadlinerProj
 }
 
 export const FinishedProjectsLinks : ProjectLinkHolder[] = [
-    AtlasSwingsProjLink, 
     ShaderEngineProjLink,
+    HeadlinerProjLink,
+]
+
+export const FinishedGameLinks : ProjectLinkHolder[] = [
+    AtlasSwingsProjLink, 
     BirdBattleProjLink,
     USFPSProjLink,
     NoteProjLink,

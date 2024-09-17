@@ -1,9 +1,13 @@
 // https://stackoverflow.com/questions/64032166/tailwindcss-not-working-with-next-js-what-is-wrong-with-the-configuration
 
+import React from "react";
 import "../globals.css";
 import Header from "./header";
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from "@vercel/speed-insights/next"
+import BackgroundWrapper from "@/components/BackgroundWrapper";
+import { ShaderBackground } from "./background";
+
 
 export const metadata = {
   title: 'Evan Mickelson',
@@ -33,15 +37,27 @@ export default function RootLayout({
         {/* <Analytics mode="production"/> */}
       </head>
       <body>
-        <section className="flex flex-col min-h-screen">
+        <section className="flex flex-col min-h-screen ">
           {/* Include shared UI here e.g. a header or sidebar */}
-          <nav>
+          <nav className="bg-white top-0 left-0">
               <Header></Header>
           </nav>
-    
-          <div className="h-full">
-            {children}
-          </div>
+
+
+          
+
+          <div className="relative">
+          {/* <BackgroundWrapper background={<div/>}> */}
+            <React.StrictMode>
+              <div className="h-ful">
+                {children}
+              </div>
+              
+            </React.StrictMode>
+
+            </div>
+          {/* </BackgroundWrapper> */}
+          
         </section>
         {/* <div className="h-12 bg-black mt-auto"/> */}
         {/* <Analytics mode={'production'} />; */}

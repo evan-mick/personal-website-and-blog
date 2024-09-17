@@ -33,7 +33,7 @@ export const menuItems = [
 
 export default function Header() {
     return (
-      <div className="shadow-lg">
+      <div className="shadow-lg relative z-0">
         <nav>
           <ul className="menus flex flex-wrap w-screen justify-center gap-x-10 md:gap-x-24">
             {menuItems.map((menu, index) => {

@@ -25,7 +25,7 @@ export default function ProjectDisplay(props: ProjectLinkHolder) {
     console.log(props.linkTo);
 
     return (
-        <div className="h-76 w-96 shadow-lg rounded-lg hover:outline transition ease-out hover:scale-105 ">
+        <div className="h-76 w-96 shadow-lg rounded-lg hover:outline transition ease-out hover:scale-105">
             
             <button onClick={() => onAnyClick()} className="flex-col justify-center align-middle items-center ">
                 {props.title == undefined ? <></> :<h1 className="text-l mb-2 mt-2">{props.title}</h1>}

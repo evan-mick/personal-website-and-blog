@@ -68,8 +68,8 @@ export default async function Page({ params }: { params: { post: string } }) {
 
     return (<div>
         {post.data.show ? 
-        <section className="m-20 p-20 rounded-md shadow-lg h-full block">
-            <h1 className="text-6xl mb-10">{post.data.title}</h1>
+        <section className="m-5 sm:m-20 md:p-20 md:rounded-md md:shadow-lg h-full block bg-white">
+            <h1 className="text-3xl md:text-6xl mb-10">{post.data.title}</h1>
              <Image 
                         src={post.data.img}
                         alt="Photo"
@@ -79,7 +79,7 @@ export default async function Page({ params }: { params: { post: string } }) {
                         style={{ width: '100%', height: 'auto' }}
                     /> 
             {/* <article className="prose w-full max-w-none"> */}
-                <ReactMarkdown className="prose-lg prose-neutral w-full max-w-none"
+                <ReactMarkdown className="prose md:prose-lg prose-neutral w-full max-w-none"
                 components={{
           code({ node, className, children, ...props }) {
             const match = /language-(\w+)/.exec(className || '');
