@@ -29,10 +29,10 @@ export default function Page() {
           <br />
           <p>
             As a participant in Capitalism, I seek gainful employment.
-            My latest attempt was from June to August of 2024,
+            My latest attempt was from May to August of 2024.
             I am happy to say that, thanks to the purchasing of V-bucks from the credit cards of millions of parents worldwide,
-            this summer (2024) I was employed at Epic Games as a "Gameplay Programming Intern,"
-            where I have worked on Fortnite Festival using Unreal Engine and C++ on the Harmonix team.
+            I was employed at Epic Games as a "Gameplay Programming Intern,"
+            where I worked on Fortnite Festival using Unreal Engine and C++ on the Harmonix team.
           </p>
           <br />
           <p>
@@ -47,7 +47,7 @@ export default function Page() {
           </p>
           <br />
           <p>
-            The website you are see was by *yours truly* using Next JS with Tailwind CSS. You can find the code for it <a className="underline text-blue-400" href="https://github.com/evan-mick/personal-website-and-blog">Here</a>
+            The website you are seeing was made by *yours truly* using Next JS with Tailwind CSS. You can find the code for it <a className="underline text-blue-400" href="https://github.com/evan-mick/personal-website-and-blog">Here</a>
           </p>
         </div>
       </section>
