@@ -13,7 +13,7 @@ export default function Page() {
 
 
   return (
-    <div className="w-screen h-screen flex-col justify-center align-middle font-mono">
+    <div className="w-screen h-screen flex-col justify-center align-middle">
       <section>
         <h1 className="text-4xl md:text-8xl m-10 md:mx-48 xl:mx-96">
           I am <br /> <b>Evan Samuel Mickelson</b>
@@ -80,8 +80,8 @@ export default function Page() {
               Lastly, I made a prototype map for the VR game Pavlov, as well as a VR fireplace simulator for the Brown 2023 hackathon.</li>
             <li className="mt-2"><b>Go:</b> I used Go to implement the RAFT distributed dictionary protocol for a distributed systems course.
               Along with that, I am using it for the backend of a news headline and summarizing website for webscraping, serverside rendering, API handling, and database access.</li>
-            <li className="mt-2"><b>React, Typescript, CSS:</b> Along with using Next for this website, I am currently using React Native for a social media mobile app.
-              I have also made use of React for school projects in my school's software engineering course and for the frontend for a WIP project for Brown's Entrepreneurship Club.</li>
+            <li className="mt-2"><b>React, Typescript, CSS:</b> Along with using Next for this website.
+              I have also made use of React for school projects in my school's software engineering course and for the frontend for a project in Brown's Entrepreneurship Club.</li>
             <li className="mt-2"><b>C++</b>: In Computer Graphics, I made a realtime renderer (using OpenGL), a software raytracer, and paint application using C++.
               In Computer Networks, I created an implementation of the IP and TCP protocol with virtual router and host nodes.
               In a joint final project between the two classes, I created a multiplayer Quake clone that utilized a custom built ECS and a game client-server architecture. It uses OpenGL for rendering.
