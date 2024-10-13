@@ -4,7 +4,7 @@
 import React, { useEffect } from 'react';
 import hljs from 'highlight.js';
 // import 'highlight.js/styles/github.css'; // Choose a style or use custom CSS
-import 'src/app/brighttheme.css';
+import '../app/brighttheme.css';
 import cpp from 'highlight.js/lib/languages/cpp';
 
 interface CodeBlockProps {
