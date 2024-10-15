@@ -303,10 +303,23 @@ export const HeadlinerProj: Project = {
 export const HeadlinerProjLink: ProjectLinkHolder = {
     linkTo: "/projects/headliner",
     photoLink: "/projects/headlinertitle.png",
-    desc: "The Headliner is a news summarizer and aggregating website",
+    desc: "The Headliner is a news summarizing and aggregating website",
 }
 
-
+export const LyfeProj: Project = {
+    name: "Battery App",
+    description: "Currently working on an app using SwiftUI for an unannounced battery startup. For the front display, I was able to make use of my knowledge of shaders to have an interactive display using Metal. In addition, I am working to interface the app with a custom battery external accessory to pull battery charge and naming information using Apple's external hardware libraries. This is a very exciting project for me to work on as I have not previously done a ton of hardware or app development work.",
+    tools: "SwiftUI, Metal, XCode",
+    images: [
+        "/projects/batteryapp.png",
+    ],
+    link: "",
+}
+export const LyfeProjLink: ProjectLinkHolder = {
+    linkTo: "/projects/battery",
+    photoLink: "/projects/batteryapp.png",
+    desc: "Hardware interfacing app for upcoming battery startup",
+}
 
 export const NameToProject: { [key: string]: Project } = {
     tetron: TetronProj,
@@ -320,12 +333,14 @@ export const NameToProject: { [key: string]: Project } = {
     skippy: SkippyProj,
     origamibirdbattle: BirdBattleProj,
     shaderengine: ShaderEngineProj,
-    headliner: HeadlinerProj
+    headliner: HeadlinerProj,
+    battery: LyfeProj
 }
 
 export const FinishedProjectsLinks: ProjectLinkHolder[] = [
     ShaderEngineProjLink,
     HeadlinerProjLink,
+    LyfeProjLink
 ]
 
 export const FinishedGameLinks: ProjectLinkHolder[] = [
