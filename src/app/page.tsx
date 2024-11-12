@@ -72,8 +72,8 @@ export default function Page() {
           </p>
           <ul>
 
-            <li className="mt-2"><b>Unreal Game Engine</b>: This summer, 2024 I am at Epic Games. Specifically, I am an intern on the Harmonix team where I worked on Fortnite Festival, the "guitar hero" gamemode for Fortnite.
-              There I extensively used C++, Blueprints, and many of Unreal's other features from UI to animation to create cheats and fix bugs to improve internal developer experience and the front facing user experience.
+            <li className="mt-2"><b>Unreal Game Engine</b>: In the summer of 2024, I was at Epic Games. Specifically, I was an intern on the Harmonix team where I worked on Fortnite Festival, the "Guitar Hero" gamemode for Fortnite.
+              There I extensively used C++, Blueprints, and many of Unreal's other features to create cheats, fix bugs, and to improve the developer and user experience.
               During my time at 2K games, I used Unreal Game Engine to explore the onboarding process for their internal games backend services.
               In the summer of 2022, I taught the engine to 30 teenagers at my time camp counselling at iDTech.
               I have also used the engine to help create US(FPS), a packaged themed first person shooter, in Brown RISD Game Developers.
@@ -93,7 +93,7 @@ export default function Page() {
               In that time, I have released 6 projects online and created over a dozen other prototypes and small projects.
               From that, I have gained a deep understanding of the game engine, C#, and object oriented programming practices.
               See the projects section for information about the released projects </li>
-            <li className="mt-2"><b>Godot:</b>Along with many small prototypes, I was the lead programmer for Origami Bird Battle with in the Brown-RISD Game Developers.
+            <li className="mt-2"><b>Godot:</b>Along with making prototypes, I was the lead programmer for Origami Bird Battle with in the Brown-RISD Game Developers.
               I helped program, design, and architect the game and its systems while helping 10 other programmers with varying skill levels learn and use Godot effectively.</li>
             <li className="mt-2"><b>Python:</b> For my data structures and algorithms class, I implemented the page rank algorithm using Python.</li>
             <li className="mt-2"><b>Java: </b>Using Java I have created a Wolfenstein-like rendering engine. I also TA's 2D game engines where I helped program, design, and debug other students game engines.
