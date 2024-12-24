@@ -293,8 +293,8 @@ export const HeadlinerProj: Project = {
         "news articles and present them in a digestible way. The website is designed to be server side rendered periodically with a new batch of articles every few hours, and also to be " +
         "as lightweight as possible to be accessible from low service connections. Every few hours it scraps a list of websites, summarizes articles from them, stores them on a database, " +
         "then server side renders a website based on the articles, and serves the website to http clients. I use Docker to containerize the website to allow for easy hosting from any device. " +
-        "I am currently using Azure's container instances to host the site. I had a ton of fun and learned a lot from this project. ",
-    tools: "JS/HTML/CSS, Go, SQL, Docker, Cloudflare tunnel, Google Cloud Services, Google Gemini",
+        "I originally used Azure's container instances to host the site, but ran into some issues, and am now using Fly.io to host the container. I had a ton of fun and learned a lot from this project. ",
+    tools: "JS/HTML/CSS, Go, SQL, Docker, Cloudflare tunnel, Fly.io, Google Cloud Services, Google Gemini",
     images: [
         "/projects/headliner.png"
     ],
