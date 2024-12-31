@@ -275,7 +275,7 @@ export const ShaderEngineProj: Project = {
     images: [
         "/projects/shaderengine.png"
     ],
-    link: "",
+    link: "https://github.com/evan-mick/ShaderEngine",
 }
 
 export const ShaderEngineProjLink: ProjectLinkHolder = {
