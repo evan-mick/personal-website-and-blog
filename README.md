@@ -1,4 +1,4 @@
-Hi! Welcome to the code for my website which can be found at evan-mickelson.com. It uses Next.js and Tailwind. Also, eventually I am going to add a music page once I have some content for that. 
+Hi! Welcome to the code for my website which can be found at [evan-mickelson.com](evan-mickelson.com). It uses Next.js and Tailwind. Also, eventually I am going to add a music page once I have some content for that. 
 
 The content for the project pages can be found in "projectData.tsx" in the constants folder. There are some resusable components for displaying projects, and lastly the general project structure follows Next.js's new app conventions. 
 
