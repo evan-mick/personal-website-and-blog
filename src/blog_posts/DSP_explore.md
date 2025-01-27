@@ -1,9 +1,9 @@
 ---
 title: "Explorations in DSP: Wave Files"
-description: "Parsing a wave file in C++"
+description: "Learning about digital signal processing, starting with parsing a wave file in C++"
 date: "2025-01-27"
 lastUpdated: "2025-01-27"
-img: "/projects/quakeclonecover.png"
+img: "/blog/waveblog.jpeg"
 show: true
 ---
 
@@ -19,8 +19,7 @@ This blog post is dedicated to my explorations into audio programmingand digital
 Wave files are a subset of the RIFF file specification made in the 90s by Microsoft. 
 Each Wave file has a variable length header consisting of many "Chunks" specifing metadata about the main data payload.
 
-here are the main sources I looked at while making this
-(list here)
+Here are the main sources I looked at while making this
 [Resource of understanding WAVE specification](https://mmsp.ece.mcgill.ca/Documents/AudioFormats/WAVE/WAVE.html)
 [Example implementation of WAVE Parser](https://github.com/deg3x/WAVParser/tree/master)
 
@@ -168,10 +167,15 @@ m chunk to chunk
 
 Returning to the payload itself, once again, the data chunk contains pulse signal modulation data. To those not familiar, you may have seen audio represented like this:
 
-(audacity photo)
+![Picture of Wave file representation](/blog/wavefile.png)
 
 What this is a visualization of is a graph of each individual sample point, and in fact, if you zoom really far in, you can see a visual of each individual sample. 
+
+
+![Picture of closeup Wave file representation](/blog/wavefile_close.png)
 
 When your computer plays back audio, what it does is sends that information to your speaker, headphones, etc. and said speaker has a motor connected to a diaphragm which pulsates based on the data in your audio file. Your audio file contains thousands (usually 44100 or 48000) of samples per second, usually with 24 bits of information per sample (though 16 is often used, and on older computers it would be 8 or fewer bits) meaning in each given 1/48000th of a second there are 2^24 possible positions for the motor to register for an average audio file. The pulsations from your speaker moves the air in front of it, creating sound through the air, which you then hear as it moves to your ear. 
 
 Wave files can actually have many factors more samples per second, its not uncommon to see files with 96000 (!) samples per second. However, for any audio meant for humans, this is rarely used. In fact, I make music and never export to anything higher than 48000hz. Why? Because human hearing is capped around 22khz. The vast majority of the population cannot physically hear sound higher than that frequency. As it turns out, due to something called the "Nyquist Limit," pulse signal modulation data can only express sound at a frequency half that of the sample rate. So, an audio file with 48000hz as its sample rate can only express frequencies up to 24000hz, just out of reach for human hearing, and thus there is no real point to have audio at higher frequencies if its for human ears (it isn't too hard to imagine scientific or alternate reasons to have higher sample rates though considering animals can hear at different ranges and a lot more goes on in the world at higher frequencies). The reasoning for this is just out of the scope of this blog post, but it has to do with sine waves and information that will be talked about later. 
+
+That is it for now, next I will explore the discrete fourier transform and equalizers. 
