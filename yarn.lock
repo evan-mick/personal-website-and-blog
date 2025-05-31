@@ -69,6 +69,25 @@
   resolved "https://registry.npmjs.org/@eslint/js/-/js-8.44.0.tgz"
   integrity sha512-Ag+9YM4ocKQx9AarydN0KY2j0ErMHNIocPDrVo8zAE44xLTjEtz81OdR68/cydGtk6m6jDb5Za3r2useMzYmSw==
 
+"@fortawesome/fontawesome-common-types@6.7.2":
+  version "6.7.2"
+  resolved "https://registry.yarnpkg.com/@fortawesome/fontawesome-common-types/-/fontawesome-common-types-6.7.2.tgz#7123d74b0c1e726794aed1184795dbce12186470"
+  integrity sha512-Zs+YeHUC5fkt7Mg1l6XTniei3k4bwG/yo3iFUtZWd/pMx9g3fdvkSK9E0FOC+++phXOka78uJcYb8JaFkW52Xg==
+
+"@fortawesome/fontawesome-svg-core@^6.7.2":
+  version "6.7.2"
+  resolved "https://registry.yarnpkg.com/@fortawesome/fontawesome-svg-core/-/fontawesome-svg-core-6.7.2.tgz#0ac6013724d5cc327c1eb81335b91300a4fce2f2"
+  integrity sha512-yxtOBWDrdi5DD5o1pmVdq3WMCvnobT0LU6R8RyyVXPvFRd2o79/0NCuQoCjNTeZz9EzA9xS3JxNWfv54RIHFEA==
+  dependencies:
+    "@fortawesome/fontawesome-common-types" "6.7.2"
+
+"@fortawesome/react-fontawesome@^0.2.2":
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/@fortawesome/react-fontawesome/-/react-fontawesome-0.2.2.tgz#68b058f9132b46c8599875f6a636dad231af78d4"
+  integrity sha512-EnkrprPNqI6SXJl//m29hpaNzOp1bruISWaOiRtkMi/xSvHJlzc2j2JAYS7egxt/EbjSNV/k6Xy0AQI6vB2+1g==
+  dependencies:
+    prop-types "^15.8.1"
+
 "@humanwhocodes/config-array@^0.11.10":
   version "0.11.14"
   resolved "https://registry.npmjs.org/@humanwhocodes/config-array/-/config-array-0.11.14.tgz"
@@ -1684,16 +1703,6 @@ get-tsconfig@^4.5.0:
   dependencies:
     resolve-pkg-maps "^1.0.0"
 
-gl-react-dom@^5.2.1:
-  version "5.2.1"
-  resolved "https://registry.npmjs.org/gl-react-dom/-/gl-react-dom-5.2.1.tgz"
-  integrity sha512-RZxOovktk8czle/FiMbiEJJxHLICoHEzxU46GeQ9tqiWMYxj/wj01VbqGVlrn6wVZ+fx77bhRxzn5ptW2uuxbA==
-  dependencies:
-    invariant "^2.2.4"
-    prop-types "^15.7.2"
-    raf "^3.4.1"
-    webgltexture-loader-dom "1.0.0"
-
 glob-parent@^5.1.2, glob-parent@~5.1.2:
   version "5.1.2"
   resolved "https://registry.npmjs.org/glob-parent/-/glob-parent-5.1.2.tgz"
@@ -1958,13 +1967,6 @@ internal-slot@^1.0.4, internal-slot@^1.0.7:
     es-errors "^1.3.0"
     hasown "^2.0.0"
     side-channel "^1.0.4"
-
-invariant@^2.2.4:
-  version "2.2.4"
-  resolved "https://registry.npmjs.org/invariant/-/invariant-2.2.4.tgz"
-  integrity sha512-phJfQVBuaJM5raOpJjSfkiD6BpbCE4Ns//LaXl6wGYtUBY83nWS6Rf9tXm2e8VaK60JEjYldbPif/A2B1C2gNA==
-  dependencies:
-    loose-envify "^1.0.0"
 
 is-alphabetical@^2.0.0:
   version "2.0.1"
@@ -2364,7 +2366,7 @@ longest-streak@^3.0.0:
   resolved "https://registry.npmjs.org/longest-streak/-/longest-streak-3.1.0.tgz"
   integrity sha512-9Ri+o0JYgehTaVBBDoMqIl8GXtbWg711O3srftcHhZ0dqnETqLaoIK0x17fUw9rFSlK/0NlsKe0Ahhyl5pXE2g==
 
-loose-envify@^1.0.0, loose-envify@^1.1.0, loose-envify@^1.4.0:
+loose-envify@^1.1.0, loose-envify@^1.4.0:
   version "1.4.0"
   resolved "https://registry.npmjs.org/loose-envify/-/loose-envify-1.4.0.tgz"
   integrity sha512-lyuxPGr/Wfhrlem2CL/UcnUc1zcqKAImBDzukY7Y5F/yQiNdko6+fRLevlw1HgMySw7f611UIY408EtxRSoK3Q==
@@ -3073,11 +3075,6 @@ path-type@^4.0.0:
   resolved "https://registry.npmjs.org/path-type/-/path-type-4.0.0.tgz"
   integrity sha512-gDKb8aZMDeD/tZWs9P6+q0J9Mwkdl6xMV8TjnGP3qJVJ06bdMgkbBlLU8IdfOsIsFz2BW1rNVT3XuNEl8zPAvw==
 
-performance-now@^2.1.0:
-  version "2.1.0"
-  resolved "https://registry.npmjs.org/performance-now/-/performance-now-2.1.0.tgz"
-  integrity sha512-7EAHlyLHI56VEIdK57uwHdHKIaAGbnXPiw0yWbarQZOKaKpvUIgW0jWRVLiatnM+XXlSwsanIBH/hzGMJulMow==
-
 periscopic@^3.0.0:
   version "3.1.0"
   resolved "https://registry.npmjs.org/periscopic/-/periscopic-3.1.0.tgz"
@@ -3196,7 +3193,7 @@ prelude-ls@^1.2.1:
   resolved "https://registry.npmjs.org/prelude-ls/-/prelude-ls-1.2.1.tgz"
   integrity sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==
 
-prop-types@^15.7.2, prop-types@^15.8.1:
+prop-types@^15.5.6, prop-types@^15.8.1:
   version "15.8.1"
   resolved "https://registry.npmjs.org/prop-types/-/prop-types-15.8.1.tgz"
   integrity sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==
@@ -3220,13 +3217,6 @@ queue-microtask@^1.2.2:
   resolved "https://registry.npmjs.org/queue-microtask/-/queue-microtask-1.2.3.tgz"
   integrity sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A==
 
-raf@^3.4.1:
-  version "3.4.1"
-  resolved "https://registry.npmjs.org/raf/-/raf-3.4.1.tgz"
-  integrity sha512-Sq4CW4QhwOHE8ucn6J34MqtZCeWFP2aQSmrlroYgqAV1PjStIhJXxYuTgUIfkEk7zTLjmIjLmU5q+fbD1NnOJA==
-  dependencies:
-    performance-now "^2.1.0"
-
 react-dom@18.2.0:
   version "18.2.0"
   resolved "https://registry.npmjs.org/react-dom/-/react-dom-18.2.0.tgz"
@@ -3234,6 +3224,13 @@ react-dom@18.2.0:
   dependencies:
     loose-envify "^1.1.0"
     scheduler "^0.23.0"
+
+react-fontawesome@^1.7.1:
+  version "1.7.1"
+  resolved "https://registry.yarnpkg.com/react-fontawesome/-/react-fontawesome-1.7.1.tgz#f74f5a338fef3ee3b379820109c1cba47290f035"
+  integrity sha512-kottReWW1I9Uupub6A5YX4VK7qfpFnEjAcm5zB4Aepst7iofONT27GJYdTcRsj7q5uQu9PXBL7GsxAFKANNUVg==
+  dependencies:
+    prop-types "^15.5.6"
 
 react-is@^16.13.1:
   version "16.13.1"
@@ -3473,11 +3470,6 @@ set-function-name@^2.0.1, set-function-name@^2.0.2:
     es-errors "^1.3.0"
     functions-have-names "^1.2.3"
     has-property-descriptors "^1.0.2"
-
-shadertoy-react@^1.1.2:
-  version "1.1.2"
-  resolved "https://registry.yarnpkg.com/shadertoy-react/-/shadertoy-react-1.1.2.tgz#109d411df53792f4a38079ea1bf73ca9a27b7203"
-  integrity sha512-xlZA+GipOKR6B1SDHBrVLBK8zpfWFMOKddXvdU9B3yVhWlw4mX4Buex2ZxD3DJJeD8tw0kOU3jVeF2KgAeFUHA==
 
 shebang-command@^2.0.0:
   version "2.0.0"
@@ -4041,41 +4033,6 @@ vfile@^6.0.0, vfile@^6.0.1:
     "@types/unist" "^3.0.0"
     unist-util-stringify-position "^4.0.0"
     vfile-message "^4.0.0"
-
-webgltexture-loader-dom-canvas@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.npmjs.org/webgltexture-loader-dom-canvas/-/webgltexture-loader-dom-canvas-1.0.0.tgz"
-  integrity sha512-lRDoPVE4GXFyfsl/E5+sZd7m6304RmBRky0SmgHlqJZJySFrCbQMF/hMQkWNWM5iYks84kRUGlwugW/c6OgpDw==
-  dependencies:
-    webgltexture-loader "^1.0.0"
-
-webgltexture-loader-dom-image-url@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.npmjs.org/webgltexture-loader-dom-image-url/-/webgltexture-loader-dom-image-url-1.0.0.tgz"
-  integrity sha512-KiQ16cLBTjoCQfdvfy1SQP3wMWEPW9ADqsODyhd+6nMg7qD6FmewF3OZs6chF4yfDtlVVXRYI/cDGF1K9MK5Mg==
-  dependencies:
-    webgltexture-loader "^1.0.0"
-
-webgltexture-loader-dom-video@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.npmjs.org/webgltexture-loader-dom-video/-/webgltexture-loader-dom-video-1.0.0.tgz"
-  integrity sha512-o3zB2XQEMAqgHQeNavoy4q5/lwIIt1MjF6Qj+pUDju9VlovJXGJiCIZ/suv715YgS3k36/pg97847GhV3bHczQ==
-  dependencies:
-    webgltexture-loader "^1.0.0"
-
-webgltexture-loader-dom@1.0.0:
-  version "1.0.0"
-  resolved "https://registry.npmjs.org/webgltexture-loader-dom/-/webgltexture-loader-dom-1.0.0.tgz"
-  integrity sha512-JavQ9Hvv3DIYx6WuqzVa76bn2YCcq1lazUdzf277VZWrmxVCln5QFjyTfWZozgYtT21lVeu6MdMOUIbY4xhjqA==
-  dependencies:
-    webgltexture-loader-dom-canvas "^1.0.0"
-    webgltexture-loader-dom-image-url "^1.0.0"
-    webgltexture-loader-dom-video "^1.0.0"
-
-webgltexture-loader@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.npmjs.org/webgltexture-loader/-/webgltexture-loader-1.0.0.tgz"
-  integrity sha512-TbQUdr0Bc3tcJ4pKIFoM9dKyLdYNf9Uxq05oZuIT+2e/vCcfaQS+WjNmW1FwYqaBrzcLr9CA/HBAmvyaS/REGw==
 
 which-boxed-primitive@^1.0.2:
   version "1.0.2"
