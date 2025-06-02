@@ -4,7 +4,7 @@ import { serialize } from "next-mdx-remote/serialize";
 import { MDXRemoteSerializeResult } from "next-mdx-remote";
 import CodeBlock from "@/components/CodeBlock";
 import { getPostContent } from "@/helpers/markdown";
-import MarkdownPage from "../../../components/markdown.tsx";
+import MarkdownPage from "../../../components/MarkdownPage.tsx";
 
 type Props = {
   serialized: MDXRemoteSerializeResult<
@@ -44,6 +44,6 @@ type Props = {
 //  };
 //}
 
-export default async function Page({ params }: { params: { post: string } }) {
-  return <MarkdownPage params={params} />;
+export default function Page({ params }: { params: { post: string } }) {
+  return <MarkdownPage pageUrl={params.post} />;
 }

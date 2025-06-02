@@ -20,9 +20,9 @@ export const getPostContent = (slug: string) => {
 };
 
 export default async function MarkdownPage(
-   { params }: { params: { post: string } },
+   { pageUrl }: { pageUrl: string },
 ) {
-   const post = getPostContent(params.post);
+   const post = getPostContent(pageUrl);
 
    return (
       <div>
