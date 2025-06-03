@@ -28,11 +28,13 @@ export default function ProjectDisplay(props: ProjectLinkHolder) {
                 {props.title == undefined
                     ? <></>
                     : <h1 className="text-l mb-2 mt-2">{props.title}</h1>}
-                <img
+                <Image
                     className="w-96 md:h-48 object-scale-down md:object-cover"
                     src={props.photoLink}
                     alt="Photo"
+                    sizes="100vw"
                     width={100}
+                    height={100}
                 />
                 <p className="m-4 text-center hidden md:flex">
                     {props.desc}
@@ -41,4 +43,3 @@ export default function ProjectDisplay(props: ProjectLinkHolder) {
         </div>
     );
 }
-

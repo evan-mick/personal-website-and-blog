@@ -72,8 +72,9 @@ export default function Page() {
               proj: ProjectLinkHolder,
             ) => (
               <ProjectDisplay
-                linkTo={proj.linkTo}
+                key={proj.title}
                 title={proj.title}
+                linkTo={proj.linkTo}
                 photoLink={proj.photoLink}
                 desc={proj.desc}
               />
