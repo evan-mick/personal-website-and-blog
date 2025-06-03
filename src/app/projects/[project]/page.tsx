@@ -1,9 +1,5 @@
 "use client";
 import MarkdownPage from "@/components/MarkdownPage";
-import { NameToProject } from "@/constants/projectData";
-import { Project } from "@/constants/types";
-import useImagePreloader from "@/hooks/useImagePreloader";
-import Image from "next/image";
 
 export default function Page({ params }: { params: { project: string } }) {
     return <MarkdownPage pageUrl={params.project} />;
@@ -70,4 +66,3 @@ export default function Page({ params }: { params: { project: string } }) {
         </div>
     );
 }*/
-

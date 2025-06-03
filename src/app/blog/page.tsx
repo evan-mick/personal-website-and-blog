@@ -5,9 +5,6 @@ import {
 import ProjectDisplayHolder from "@/components/ProjectDisplayHolder";
 import { BlogPostMetaData, ProjectLinkHolder } from "@/constants/types";
 
-import fs from "fs";
-import matter from "gray-matter";
-
 export default function Page() {
     const blogs: ProjectLinkHolder[] = getProjectLinkHoldersFromPostLinks([
         "dsp_explore",

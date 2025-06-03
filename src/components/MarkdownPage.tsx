@@ -2,7 +2,6 @@ import fs from "fs";
 import matter from "gray-matter";
 import path from "path";
 import { BlogPostMetaData, ProjectLinkHolder } from "@/constants/types";
-import useImagePreloader from "@/hooks/useImagePreloader";
 
 import Image from "next/image";
 import ReactMarkdown from "react-markdown";
@@ -86,7 +85,7 @@ export default function MarkdownPage(
    { pageUrl }: { pageUrl: string },
 ) {
    const post = getPostContent(pageUrl);
-   const data = getPostData(pageUrl);
+   //const data = getPostData(pageUrl);
 
    const imagesPreloaded = true; //useImagePreloader([data.img]);
 
