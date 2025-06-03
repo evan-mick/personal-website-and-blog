@@ -28,7 +28,7 @@ export default function Page() {
   return (
     <section className="sm:m-20 p-10 h-full bg-white flex items-center flex-col">
       <section className="m-5 p-10 rounded-md shadow-lg h-full bg-white w-full">
-        <h4 className="text-xl  text-center md:text-5xl md:text-left pb-12 ">
+        <h4 className="font-bold text-xl text-center md:text-5xl md:text-left pb-12 ">
           Projects
         </h4>
         {
@@ -43,7 +43,9 @@ export default function Page() {
       </section>
 
       <section className="m-5 p-10 rounded-md shadow-lg h-full bg-white w-full">
-        <h4 className="text-5xl text-center md:text-left pb-12">Games</h4>
+        <h4 className="font-bold text-5xl text-center md:text-left pb-12">
+          Games
+        </h4>
         {
           /* <p className="my-5">
           At the top here you can see my finished works. Scroll down a bit more and you'll see some of my unfinished projects.

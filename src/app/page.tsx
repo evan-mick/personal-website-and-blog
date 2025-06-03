@@ -4,7 +4,6 @@ import { ProjectLinkHolder } from "@/constants/types";
 
 export default function Page() {
   //redirect('/dashboard');
-
   return (
     <div className="w-screen h-screen flex-col justify-center align-middle">
       <section>
@@ -15,11 +14,12 @@ export default function Page() {
       <section className="w-full">
         <div className="whitespace-pre-wrap m-10 md:mx-48 xl:mx-96">
           <p>
-            I am a Computer Science and Economics student at Brown University,
-            and I am well-versed in software engineering and product management.
-            I am also a passionate game developer and musician. This website
-            exists as a place for employers to see my experiences and for me to
-            show off my software, music, and thoughts in a centralized place.
+            I am a new grad Computer Science and Economics major from Brown
+            University, and I am well-versed in software engineering and product
+            management. I am also a passionate game developer and musician. This
+            website exists as a place for employers to see my experiences and
+            for me to show off my software, music, and thoughts in a centralized
+            place.
           </p>
           <br />
           <p>
@@ -98,76 +98,141 @@ export default function Page() {
           </p>
           <ul>
             <li className="mt-2">
-              <b>Unreal Game Engine</b>: In the summer of 2024, I was at Epic
-              Games. Specifically, I was an intern on the Harmonix team where I
-              worked on Fortnite Festival, the "Guitar Hero" gamemode for
-              Fortnite. There I extensively used C++, Blueprints, and many of
-              Unreal's other features to create cheats, fix bugs, and to improve
-              the developer and user experience. During my time at 2K games, I
-              used Unreal Game Engine to explore the onboarding process for
-              their internal games backend services. In the summer of 2022, I
-              taught the engine to 30 teenagers at my time camp counselling at
-              iDTech. I have also used the engine to help create US(FPS), a
-              packaged themed first person shooter, in Brown RISD Game
-              Developers. Lastly, I made a prototype map for the VR game Pavlov,
-              as well as a VR fireplace simulator for the Brown 2023 hackathon.
+              <b>Unreal Game Engine</b>:
+              <ul className="list-disc list-inside">
+                <li>
+                  Worked on Fortnite Festival at Epic Games (Fortnite's Guitar
+                  Hero gamemode). Extensively used C++, Blueprints, and many of
+                  Unreal's other features to create cheats, fix bugs, and to
+                  improve the developer and user experience
+                </li>
+                <li>
+                  At 2K games, used the engine to explore the onboarding process
+                  for their internal games backend services.
+                </li>
+                <li>
+                  Taught the engine to 30 teenagers while camp counselling at
+                  iDTech summer of 2022.
+                </li>
+                <li>
+                  Developed small game projects with it, including US(F)PS (an
+                  package themed FPS), a VR map for the game Pavlov, and a VR
+                  campfire simulator game.
+                </li>
+              </ul>
             </li>
             <li className="mt-2">
-              <b>Go:</b>{" "}
-              I used Go to implement the RAFT distributed dictionary protocol
-              for a distributed systems course. Along with that, I am using it
-              for the backend of a news headline and summarizing website for
-              webscraping, serverside rendering, API handling, and database
-              access.
+              <b>Go:</b>
+
+              <ul className="list-disc list-inside">
+                <li>
+                  Implemented the RAFT distributed dictionary protocol for a
+                  distributed systems course.
+                </li>{" "}
+                <li>
+                  Using Go for the backend of a news headline and summarizing
+                  website "The Headliner." Handling web scraping, server-side
+                  rendering, API handling, and database access.
+                </li>
+              </ul>
             </li>
             <li className="mt-2">
-              <b>React, Typescript, CSS:</b>{" "}
-              Along with using Next for this website. I have also made use of
-              React for school projects in my school's software engineering
-              course and for the frontend for a project in Brown's
-              Entrepreneurship Club.
+              <b>React, TypeScript, CSS:</b>
+
+              <ul className="list-disc list-inside">
+                <li>
+                  Used React and TypeScript along with Next.js for this website.
+                </li>{" "}
+                <li>
+                  Used React for school projects in a software engineering
+                  course.
+                </li>{" "}
+                <li>
+                  Built the frontend for a project in Brown's Entrepreneurship
+                  Club using React.
+                </li>
+              </ul>
             </li>
             <li className="mt-2">
-              <b>C++</b>: In Computer Graphics, I made a realtime renderer
-              (using OpenGL), a software raytracer, and paint application using
-              C++. In Computer Networks, I created an implementation of the IP
-              and TCP protocol with virtual router and host nodes. In a joint
-              final project between the two classes, I created a multiplayer
-              Quake clone that utilized a custom built ECS and a game
-              client-server architecture. It uses OpenGL for rendering. For it,
-              I with 2 other people created physics, rendering, gameplay, and
-              networking sytems. Lastly, for my computer systems course, I
-              created Snake with custom levels, security and page table features
-              for WeenseyOS (a unix-like OS project), and the logic for a key
-              value store all using C++
+              <b>C++:</b>
+
+              <ul className="list-disc list-inside">
+                <li>
+                  In Computer Graphics, built a real-time renderer (using
+                  OpenGL), a software raytracer, and a paint application.
+                </li>{" "}
+                <li>
+                  In Computer Networks, implemented IP and TCP protocols with
+                  virtual router and host nodes.
+                </li>{" "}
+                <li>
+                  For a joint final project between the two classes, created a
+                  multiplayer Quake clone with a custom ECS and game
+                  client-server architecture. Worked with 2 others on physics,
+                  rendering, gameplay, and networking systems.
+                </li>{" "}
+                <li>
+                  In a Computer Systems course, built Snake with custom levels,
+                  added page table features and security to WeenseyOS (a
+                  Unix-like OS project), and implemented a key-value store all
+                  in C++ ("C with classes" style).
+                </li>
+              </ul>
             </li>
             <li className="mt-2">
-              <b>Unity Game Engine and C#:</b>{" "}
-              I have used Unity for over 6 years. In that time, I have released
-              6 projects online and created over a dozen other prototypes and
-              small projects. From that, I have gained a deep understanding of
-              the game engine, C#, and object oriented programming practices.
-              See the projects section for information about the released
-              projects
+              <b>Unity Game Engine and C#:</b>
+
+              <ul className="list-disc list-inside">
+                <li>
+                  Used Unity for over 6 years, releasing 6 projects online and
+                  building over a dozen prototypes and smaller projects.
+                </li>{" "}
+                <li>
+                  Gained deep understanding of Unity, C#, and object-oriented
+                  programming practices.
+                </li>
+              </ul>
             </li>
             <li className="mt-2">
-              <b>Godot:</b>Along with making prototypes, I was the lead
-              programmer for Origami Bird Battle with in the Brown-RISD Game
-              Developers. I helped program, design, and architect the game and
-              its systems while helping 10 other programmers with varying skill
-              levels learn and use Godot effectively.
+              <b>Godot:</b>
+
+              <ul className="list-disc list-inside">
+                <li>
+                  Lead programmer for Origami Bird Battle with Brown-RISD Game
+                  Developers.
+                </li>{" "}
+                <li>
+                  Programmed, designed, and architected the game and its
+                  systems, while mentoring 10 other programmers of varying skill
+                  levels in Godot.
+                </li>{" "}
+                <li>Built additional prototypes using the engine.</li>
+              </ul>
             </li>
             <li className="mt-2">
-              <b>Python:</b>{" "}
-              For my data structures and algorithms class, I implemented the
-              page rank algorithm using Python.
+              <b>Python:</b>
+
+              <ul className="list-disc list-inside">
+                <li>
+                  Implemented the PageRank algorithm for a data structures and
+                  algorithms course.
+                </li>
+              </ul>
             </li>
             <li className="mt-2">
-              <b>Java:</b>Using Java I have created a Wolfenstein-like rendering
-              engine. I also TA's 2D game engines where I helped program,
-              design, and debug other students game engines. In addition, I used
-              Java to create the backend for a course planning website for my
-              software engineering course.
+              <b>Java:</b>
+
+              <ul className="list-disc list-inside">
+                <li>Built a Wolfenstein-like rendering engine.</li>{" "}
+                <li>
+                  TA’d for a 2D game engines course, assisting with programming,
+                  design, and debugging.
+                </li>{" "}
+                <li>
+                  Created the backend for a course planning website as part of a
+                  software engineering course.
+                </li>
+              </ul>
             </li>
           </ul>
         </div>
