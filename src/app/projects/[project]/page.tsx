@@ -1,4 +1,3 @@
-"use client";
 import MarkdownPage from "@/components/MarkdownPage";
 
 export default function Page({ params }: { params: { project: string } }) {
