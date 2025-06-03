@@ -6,12 +6,13 @@ import { BlogPostMetaData } from "@/constants/types";
 import Image from "next/image";
 import ReactMarkdown from "react-markdown";
 import CodeBlock from "@/components/CodeBlock";
+import useImagePreloader from "@/hooks/useImagePreloader";
 
 export const getPostContent = (slug: string) => {
    console.log(slug);
    // const folder = "src/blog_posts";
    // const fileContents = fs.readFileSync(`${folder}/${slug}.md`, "utf-8");
-   const folder = path.join(process.cwd(), `public/blog_posts`, `${slug}.md`);
+   const folder = path.join(process.cwd(), `public/md`, `${slug}.md`);
    const fileContents = fs.readFileSync(folder, "utf-8");
    const matterResult = matter(fileContents);
    return matterResult;
@@ -19,10 +20,43 @@ export const getPostContent = (slug: string) => {
    //const markdownPosts = files.filter((file) => file.endsWith(".md"));
 };
 
-export default async function MarkdownPage(
+// thx https://www.youtube.com/watch?v=Hiabp1GY8fA
+export const getPostsData = (mdFiles: string[]): BlogPostMetaData[] => {
+   const folder = "public/md";
+   //const files = fs.readdirSync(folder);
+   const markdownPosts = mdFiles
+      //.filter((file) => file.endsWith(".md"))
+      .filter((filename) => {
+         const fileContents = fs.readFileSync(
+            `${folder}/${filename}.md`,
+            "utf-8",
+         );
+         const matterResult = matter(fileContents);
+         return matterResult.data.show;
+      });
+
+   const posts: BlogPostMetaData[] = markdownPosts.map((filename) => {
+      const fileContents = fs.readFileSync(`${folder}/${filename}.md`, "utf-8");
+      const matterResult = matter(fileContents);
+
+      return {
+         name: matterResult.data.title,
+         description: matterResult.data.description,
+         date: matterResult.data.date,
+         img: matterResult.data.img,
+         url: `${"blog"}/${filename.replace(".md", "")}`,
+      };
+   });
+
+   return posts;
+};
+
+export default function MarkdownPage(
    { pageUrl }: { pageUrl: string },
 ) {
    const post = getPostContent(pageUrl);
+
+   //const imagesPreloaded  = useImagePreloader(!info ? undefined : info.images)
 
    return (
       <div>
