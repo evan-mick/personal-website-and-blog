@@ -1,12 +1,5 @@
-import Image from "next/image";
-import ReactMarkdown from "react-markdown";
-import { serialize } from "next-mdx-remote/serialize";
-import { MDXRemoteSerializeResult } from "next-mdx-remote";
-import CodeBlock from "@/components/CodeBlock";
-import { getPostContent } from "@/helpers/markdown";
-import MarkdownPage from "../../../components/MarkdownPage.tsx";
-
-type Props = {
+import MarkdownPage from "@/components/MarkdownPage";
+/*type Props = {
   serialized: MDXRemoteSerializeResult<
     Record<string, unknown>,
     Record<string, unknown>
@@ -18,7 +11,7 @@ type Props = {
       img: string;
     };
   };
-};
+};*/
 
 // const getListOfPosts = () => {
 //   const folder = path.join(process.cwd(), 'blog_posts')
