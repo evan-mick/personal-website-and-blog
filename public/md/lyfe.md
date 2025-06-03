@@ -1,6 +1,6 @@
 ---
 title: "Battery App"
-description: "Hardware interfacing app for upcoming battery startup",
+description: "Hardware interfacing app for upcoming battery startup"
 date: "2025-01-27"
 lastUpdated: "2025-01-27"
 img: "/projects/batteryapp.png"

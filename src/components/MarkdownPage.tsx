@@ -1,12 +1,12 @@
 import fs from "fs";
 import matter from "gray-matter";
 import path from "path";
-import { BlogPostMetaData } from "@/constants/types";
+import { BlogPostMetaData, ProjectLinkHolder } from "@/constants/types";
+import useImagePreloader from "@/hooks/useImagePreloader";
 
 import Image from "next/image";
 import ReactMarkdown from "react-markdown";
 import CodeBlock from "@/components/CodeBlock";
-import useImagePreloader from "@/hooks/useImagePreloader";
 
 export const getPostContent = (slug: string) => {
    console.log(slug);
@@ -18,6 +18,21 @@ export const getPostContent = (slug: string) => {
    return matterResult;
    // return serialize(fileContents)//matterResult;
    //const markdownPosts = files.filter((file) => file.endsWith(".md"));
+};
+
+export const getPostData = (mdFile: string): BlogPostMetaData => {
+   const folder = "public/md";
+
+   const fileContents = fs.readFileSync(`${folder}/${mdFile}.md`, "utf-8");
+   const matterResult = matter(fileContents);
+
+   return {
+      name: matterResult.data.title,
+      description: matterResult.data.description,
+      date: matterResult.data.date,
+      img: matterResult.data.img,
+      url: `${"blog"}/${mdFile}`,
+   };
 };
 
 // thx https://www.youtube.com/watch?v=Hiabp1GY8fA
@@ -51,19 +66,36 @@ export const getPostsData = (mdFiles: string[]): BlogPostMetaData[] => {
    return posts;
 };
 
+export const getProjectLinkHoldersFromPostLinks = (
+   links: string[],
+): ProjectLinkHolder[] =>
+   getPostsData(links)
+      .map(
+         (meta: BlogPostMetaData) => {
+            console.log(meta.url);
+            return {
+               linkTo: meta.url,
+               photoLink: meta.img,
+               desc: meta.description,
+               title: meta.name,
+            };
+         },
+      );
+
 export default function MarkdownPage(
    { pageUrl }: { pageUrl: string },
 ) {
    const post = getPostContent(pageUrl);
+   const data = getPostData(pageUrl);
 
-   //const imagesPreloaded  = useImagePreloader(!info ? undefined : info.images)
+   const imagesPreloaded = true; //useImagePreloader([data.img]);
 
    return (
       <div>
-         {post.data.show
+         {post.data.show && imagesPreloaded
             ? (
                <section className="m-5 sm:m-20 md:p-20 md:rounded-md md:shadow-lg h-full block bg-white">
-                  <h1 className="text-3xl md:text-6xl mb-10">
+                  <h1 className="font-bold text-3xl md:text-6xl mb-10">
                      {post.data.title}
                   </h1>
                   <Image
@@ -74,6 +106,7 @@ export default function MarkdownPage(
                      sizes="100vw"
                      style={{ width: "100%", height: "auto" }}
                   />
+                  <br />
                   {/* <article className="prose w-full max-w-none"> */}
                   <ReactMarkdown
                      className="prose md:prose-lg prose-neutral w-full max-w-none"

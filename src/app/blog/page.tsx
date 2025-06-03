@@ -1,4 +1,7 @@
-import { getPostsData } from "@/components/MarkdownPage";
+import {
+    getPostsData,
+    getProjectLinkHoldersFromPostLinks,
+} from "@/components/MarkdownPage";
 import ProjectDisplayHolder from "@/components/ProjectDisplayHolder";
 import { BlogPostMetaData, ProjectLinkHolder } from "@/constants/types";
 
@@ -6,18 +9,11 @@ import fs from "fs";
 import matter from "gray-matter";
 
 export default function Page() {
-    const blogs: ProjectLinkHolder[] = getPostsData(["obsidian", "benny"]).map(
-        (meta: BlogPostMetaData) => {
-            console.log(meta.url);
-            return {
-                linkTo: meta.url,
-                photoLink: meta.img,
-                desc: meta.description,
-                title: meta.name,
-            };
-        },
-    );
-
+    const blogs: ProjectLinkHolder[] = getProjectLinkHoldersFromPostLinks([
+        "dsp_explore",
+        "quakeclone_ecs",
+        "obsidian",
+    ]);
     return (
         <section className="sm:m-20 p-10 rounded-md shadow-lg h-full bg-white">
             <h4 className="text-5xl text-center md:text-left pb-12">Blog</h4>
@@ -30,4 +26,3 @@ export default function Page() {
         </section>
     );
 }
-
