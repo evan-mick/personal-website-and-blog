@@ -7,8 +7,8 @@ export default function Page() {
   const FinishedProjectsLinks: ProjectLinkHolder[] =
     getProjectLinkHoldersFromPostLinks([
       "shaderengine",
-      "lyfe",
       "headliner",
+      "lyfe",
     ]);
 
   const FinishedGameLinks: ProjectLinkHolder[] =
