@@ -4,7 +4,6 @@ import "../globals.css";
 import { StaticImport } from "next/dist/shared/lib/get-img-props";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
-import { RedirectType } from "next/dist/client/components/redirect";
 import { ProjectLinkHolder } from "@/constants/types";
 
 export default function ProjectDisplay(props: ProjectLinkHolder) {

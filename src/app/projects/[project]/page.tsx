@@ -1,7 +1,8 @@
 import MarkdownPage from "@/components/MarkdownPage";
 
-export default function Page({ params }: { params: { project: string } }) {
-    return <MarkdownPage pageUrl={params.project} />;
+export default async function Page({ params }: { params: Promise<{ project: string }> }) {
+    const { project } = await params;
+    return <MarkdownPage pageUrl={project} />;
 }
 
 /*export default function Page({ params }: { params: { project: string } }) {
