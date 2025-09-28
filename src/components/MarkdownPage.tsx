@@ -8,7 +8,6 @@ import ReactMarkdown from "react-markdown";
 import CodeBlock from "@/components/CodeBlock";
 
 export const getPostContent = (slug: string) => {
-   console.log(slug);
    // const folder = "src/blog_posts";
    // const fileContents = fs.readFileSync(`${folder}/${slug}.md`, "utf-8");
    const folder = path.join(process.cwd(), `public/md`, `${slug}.md`);

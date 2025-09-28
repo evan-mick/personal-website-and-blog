@@ -37,6 +37,7 @@ import MarkdownPage from "@/components/MarkdownPage";
 //  };
 //}
 
-export default function Page({ params }: { params: { post: string } }) {
-  return <MarkdownPage pageUrl={params.post} />;
+export default async function Page({ params }: { params: Promise<{ post: string }> }) {
+  const { post } = await params;
+  return <MarkdownPage pageUrl={post} />;
 }
