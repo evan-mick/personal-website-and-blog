@@ -96,34 +96,33 @@ export default function Page() {
             them.
           </p>
           <ul>
-            <li className="mt-2"><b>C++</b>:
-              The majority of my current work is done in C++ (with a smidge of Kotlin bc Android).
-              In Computer Graphics, I made a realtime renderer (using OpenGL), a software raytracer, and paint application using C++.
-              In Computer Networks, I created an implementation of the IP and TCP protocol with virtual router and host nodes.
-              In a joint final project between the two classes, I created a multiplayer Quake clone that utilized a custom built ECS and a game client-server architecture. It uses OpenGL for rendering.
-              For it, I with 2 other people created physics, rendering, gameplay, and networking sytems.
-              Lastly, for my computer systems course, I created Snake with custom levels,
-              security and page table features for WeenseyOS (a unix-like OS project),
-              and the logic for a key value store all using C++</li>
-            <li className="mt-2"><b>Unreal Game Engine</b>: In the summer of 2024, I was at Epic Games. Specifically, I was an intern on the Harmonix team where I worked on Fortnite Festival, the "Guitar Hero" gamemode for Fortnite.
-              There I extensively used C++, Blueprints, and many of Unreal's other features to create cheats, fix bugs, and to improve the developer and user experience.
-              During my time at 2K games, I used Unreal Game Engine to explore the onboarding process for their internal games backend services.
-              In the summer of 2022, I taught the engine to 30 teenagers at my time camp counselling at iDTech.
-              I have also used the engine to help create US(FPS), a packaged themed first person shooter, in Brown RISD Game Developers.
-              Lastly, I made a prototype map for the VR game Pavlov, as well as a VR fireplace simulator for the Brown 2023 hackathon.</li>
-            <li className="mt-2"><b>Go:</b> I used Go to implement the RAFT distributed dictionary protocol for a distributed systems course.
-              Along with that, I am using it for the backend of a news headline and summarizing website for webscraping, serverside rendering, API handling, and database access.</li>
-            <li className="mt-2"><b>React, Typescript, CSS:</b> Along with using Next for this website.
-              I have also made use of React for school projects in my school's software engineering course and for the frontend for a project in Brown's Entrepreneurship Club.</li>
-            <li className="mt-2"><b>Unity Game Engine and C#:</b> I have used Unity for over 6 years.
-              In that time, I have released 6 projects online and created over a dozen other prototypes and small projects.
-              From that, I have gained a deep understanding of the game engine, C#, and object oriented programming practices.
-              See the projects section for information about the released projects </li>
-            <li className="mt-2"><b>Godot:</b>Along with making prototypes, I was the lead programmer for Origami Bird Battle with in the Brown-RISD Game Developers.
-              I helped program, design, and architect the game and its systems while helping 10 other programmers with varying skill levels learn and use Godot effectively.</li>
-            <li className="mt-2"><b>Python:</b> For my data structures and algorithms class, I implemented the page rank algorithm using Python.</li>
-            <li className="mt-2"><b>Java: </b>Using Java I have created a Wolfenstein-like rendering engine. I also TA's 2D game engines where I helped program, design, and debug other students game engines.
-              In addition, I used Java to create the backend for a course planning website for my software engineering course. </li>
+            <li className="mt-2">
+              <b>C++:</b>
+
+              <ul className="list-disc list-inside">
+                <li>The majority of my current work is done in C++ for PICO headsets</li>{" "}
+                <li>
+                  In Computer Graphics, built a real-time renderer (using
+                  OpenGL), a software raytracer, and a paint application.
+                </li>{" "}
+                <li>
+                  In Computer Networks, implemented IP and TCP protocols with
+                  virtual router and host nodes.
+                </li>{" "}
+                <li>
+                  For a joint final project between the two classes, created a
+                  multiplayer Quake clone with a custom ECS and game
+                  client-server architecture. Worked with 2 others on physics,
+                  rendering, gameplay, and networking systems.
+                </li>{" "}
+                <li>
+                  In a Computer Systems course, built Snake with custom levels,
+                  added page table features and security to WeenseyOS (a
+                  Unix-like OS project), and implemented a key-value store all
+                  in C++ ("C with classes" style).
+                </li>
+              </ul>
+            </li>
             <li className="mt-2">
               <b>Unreal Game Engine</b>:
               <ul className="list-disc list-inside">
@@ -180,32 +179,7 @@ export default function Page() {
                 </li>
               </ul>
             </li>
-            <li className="mt-2">
-              <b>C++:</b>
 
-              <ul className="list-disc list-inside">
-                <li>
-                  In Computer Graphics, built a real-time renderer (using
-                  OpenGL), a software raytracer, and a paint application.
-                </li>{" "}
-                <li>
-                  In Computer Networks, implemented IP and TCP protocols with
-                  virtual router and host nodes.
-                </li>{" "}
-                <li>
-                  For a joint final project between the two classes, created a
-                  multiplayer Quake clone with a custom ECS and game
-                  client-server architecture. Worked with 2 others on physics,
-                  rendering, gameplay, and networking systems.
-                </li>{" "}
-                <li>
-                  In a Computer Systems course, built Snake with custom levels,
-                  added page table features and security to WeenseyOS (a
-                  Unix-like OS project), and implemented a key-value store all
-                  in C++ ("C with classes" style).
-                </li>
-              </ul>
-            </li>
             <li className="mt-2">
               <b>Unity Game Engine and C#:</b>
 
