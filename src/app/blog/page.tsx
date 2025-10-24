@@ -20,7 +20,7 @@ export default function Page() {
             <br />
             <p className="pb-12">
                 Oh and btw these opinions are my own and not that of my employer, etc. Not that I think having a couple technical blogs
-                and an odd fasination with a productivity tool could put a multi billion dollar company in hot water.
+                and an odd fascination with a productivity tool could put a multi billion dollar company in hot water.
             </p>
             <ProjectDisplayHolder data={blogs} />
         </section>
