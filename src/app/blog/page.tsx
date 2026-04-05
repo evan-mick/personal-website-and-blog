@@ -10,6 +10,7 @@ export default function Page() {
         "dsp_explore",
         "quakeclone_ecs",
         "obsidian",
+        "restir",
     ]);
     return (
         <section className="sm:m-20 p-10 rounded-md shadow-lg h-full bg-white">
